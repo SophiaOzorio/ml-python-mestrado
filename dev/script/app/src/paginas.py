@@ -97,11 +97,8 @@ def _busca_splits() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 
 @st.cache_data
 def _busca_resultados(tipo: str) -> dict[str, pd.DataFrame] | None:
-    """
-    Carrega df_{train,valid,test}_resultados_{tipo} (joblib).
-    tipo: 'classif' ou 'regression'. Retorna None se algum arquivo faltar.
-    """
     pasta = DIR_CLASSIF if tipo == "classif" else DIR_REGR
+    
     caminhos = {
         c: pasta / f"df_{c}_resultados_{tipo}" for c in ("train", "valid", "test")
     }
