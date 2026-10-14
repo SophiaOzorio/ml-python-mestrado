@@ -110,7 +110,7 @@ def _busca_resultados(tipo: str) -> dict[str, pd.DataFrame] | None:
     return {c: load(p) for c, p in caminhos.items()}
 
 
-@st.cache_data(show_spinner="Executando clustering...")
+@st.cache_resource(show_spinner="Executando clustering...")
 def _roda_clustering(
     modelo: str,
     variavel_1: str,
