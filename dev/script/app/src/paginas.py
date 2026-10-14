@@ -61,25 +61,14 @@ MODELOS_REG = ["Regressão Linear Múltipla", "SVR", "Bayesian Ridge", "Rede Neu
 
 CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 
-#Procura, subindo a partir deste arquivo, a pasta que contém "results"
-# (dev/script). Assim funciona esteja o paginas.py em dev/script/src ou em
-# dev/script/app/src, e não depende do diretório de execução.
-def _acha_dir_script() -> Path:
-    for pasta in Path(__file__).resolve().parents:
-        if (pasta / "results").is_dir():
-            return pasta
-    return Path(__file__).resolve().parents[1]
- 
- 
-DIR_SCRIPT = _acha_dir_script()
-DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
-DIR_CLASSIF = DIR_SCRIPT / "results" / "classificacao"
-# Resultados da regressão: aceita results/regressao (organizado) ou
-# results/split_dataset (onde o notebook salvou); usa a primeira que estiver completa
-DIR_REGR = [
-    DIR_SCRIPT / "results" / "regressao",
-    DIR_SCRIPT / "results" / "split_dataset",
-]
+# __file__ está em: dev/script/src/paginas.py
+# Subindo 2 níveis chegamos a: dev/script/
+DIR_SCRIPT = Path(__file__).resolve().parents[1]
+
+# Garante explicitamente que são objetos Path e aponta para a pasta correta com 'data'
+DIR_SPLIT: Path = DIR_SCRIPT / "app" / "data" / "results" / "split_dataset"
+DIR_CLASSIF: Path = DIR_SPLIT
+DIR_REGR: Path = DIR_SPLIT
  
 # ----------------------------------------------------------------------
 # Busca de dados (com cache)
