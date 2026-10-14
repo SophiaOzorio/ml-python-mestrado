@@ -1,0 +1,1301 @@
+gene,tipo_variante,ancestralidade,cadd_phred,cadd_raw,revel_score,gnomad_af,conservacao_phylop,profundidade_leitura,em_dominio_funcional,historico_familiar,idade_inicio_sintomas,especie,genoma_referencia,classificacao_clinica,ataxia
+PSEN1,frameshift,SAS,22.388,4.1531,0.5527,0.00018559862939538955,2.699,60.4,False,False,43.5,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,,EUR,18.163,2.2878,0.491,6.690337595023873e-05,1.259,100.9,True,False,50.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,AMR,26.44,4.7984,0.7076,4.059568219894092e-07,5.232,65.0,False,True,37.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,8.989,1.4305,0.1024,0.0014225238436669254,-1.48,80.0,False,False,51.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,18.539,3.5261,0.5452,0.0012145860874694621,-0.605,59.9,False,False,29.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,8.904,0.7382,0.3042,0.00046761311119584357,0.245,75.5,False,True,52.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,frameshift,AFR,15.069,2.2854,0.2845,,1.609,73.6,True,True,31.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,EUR,15.026,2.5552,0.2829,5.649542837791668e-06,2.909,77.0,True,True,45.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,11.072,2.3193,0.2507,1.5728409533727862e-05,1.993,117.3,False,True,44.4,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,EUR,18.865,3.5067,0.4621,0.00018440484794844073,3.287,89.7,False,True,23.4,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AFR,5.312,2.404,0.1043,0.0010150250507411824,2.053,80.9,False,True,49.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,,16.827,2.4228,0.476,1.927959417499688e-06,1.375,76.1,True,False,44.8,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,,AMR,18.179,2.8544,0.4912,4.721146210129018e-06,5.305,74.3,True,False,57.1,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,nonsense,AFR,8.243,1.8545,0.198,0.0020791176137849796,1.622,60.6,False,False,63.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,34.044,5.5607,0.7582,0.0,1.35,112.5,True,,27.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,EUR,0.0,-0.908,0.0,0.008229257787128623,-0.487,104.8,False,True,39.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,,-0.59,0.0705,0.0006151128530501645,-1.414,80.7,False,True,53.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,,4.866,0.5917,0.1738,0.0020702154778081063,-0.592,87.7,True,False,57.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,18.638,3.269,0.2787,6.031899509436113e-06,1.939,73.5,False,False,,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,frameshift,EUR,35.156,5.3699,0.8835,0.0,4.346,65.9,False,True,29.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,3.552,0.459,0.0805,0.00010093685165347613,2.366,64.9,False,True,58.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,23.735,3.4108,0.4486,5.4090615585392135e-05,1.882,96.8,False,,42.9,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,frameshift,AFR,18.373,3.1261,0.4237,3.383470898865131e-05,0.935,85.9,True,True,39.9,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EAS,19.511,3.7008,0.5467,0.0,2.774,98.8,False,False,52.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,,AMR,27.5,4.7361,0.7506,1.1108574712181786e-06,1.754,69.3,True,True,38.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AMR,32.417,3.8816,0.7486,1.511915460623944e-07,2.867,81.8,True,True,23.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,SAS,14.324,1.9347,0.3437,0.00014424126794178918,4.212,69.6,False,False,45.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,AFR,19.928,2.6689,0.4928,0.0,2.6,73.5,True,False,49.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,,29.678,5.3447,0.6395,1.1765499683747393e-07,5.67,56.2,True,False,36.2,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,frameshift,EUR,21.305,3.1179,0.6146,0.0006101944598700523,4.222,,False,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,SAS,15.081,1.9073,0.4345,0.0003028622748309615,1.991,69.6,False,False,65.9,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,AMR,4.68,1.0473,0.1042,0.006392817594650885,0.096,106.1,False,True,51.3,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,missense,SAS,14.175,2.1375,0.4438,0.0,2.445,125.3,True,,,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,26.259,4.0545,0.647,2.3643184905580885e-07,2.854,84.6,True,True,36.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,7.949,0.6189,0.187,0.00018273357451562184,-0.17,91.0,False,True,56.5,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,,AFR,30.087,5.349,0.8049,8.320573509408817e-06,1.537,53.8,True,True,29.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,EUR,25.548,4.9429,0.5059,3.938000465776485e-05,3.127,78.6,,False,56.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,missense,AMR,27.837,4.4826,0.6844,0.0,4.79,93.1,True,True,37.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,20.035,2.77,0.5072,0.0,1.147,58.7,False,True,27.8,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EUR,11.192,1.807,0.4587,0.0021293519791430763,2.575,61.2,False,False,49.5,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,frameshift,EUR,32.412,5.9328,0.8295,0.0,3.554,78.5,False,False,43.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,SAS,30.34,6.2693,0.7961,2.604215765736327e-07,3.023,82.6,True,False,36.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,AMR,24.831,4.384,0.701,0.0,4.676,76.3,True,True,39.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,,1.6412,0.4266,1.266456297623733e-05,0.488,86.5,True,False,47.8,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,nonsense,AMR,29.663,4.7298,0.6923,1.4554954599604387e-05,1.807,79.7,True,False,40.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,8.361,1.4581,0.1841,0.0012966205794846498,-1.418,91.7,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,13.381,1.0188,0.3275,1.129173815493427e-05,2.422,90.8,False,False,47.0,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,8.397,1.8429,0.2222,0.019242571453685433,-4.884,76.3,False,True,53.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,13.675,1.8747,0.4266,0.001462609844155859,-0.915,101.4,False,True,31.1,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,AMR,18.486,3.7182,0.4447,0.00011780534598901274,,89.8,True,True,33.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EAS,33.686,6.2646,0.814,0.0,5.773,68.4,True,,27.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,EUR,25.312,3.991,0.6694,0.0,6.358,84.6,True,True,34.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,22.384,3.4442,0.5536,0.00011225090188181126,1.792,68.5,True,,38.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AFR,21.465,3.5477,0.4992,1.2518206898472608e-06,1.89,75.1,False,,49.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,29.927,4.5797,0.8574,0.0,3.764,72.6,True,False,51.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,,EUR,32.415,5.1379,0.7618,1.6258189245939082e-05,6.436,64.7,True,,35.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,17.144,3.2881,0.4042,0.009863780063725723,0.634,83.7,True,False,41.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,EUR,28.587,3.9298,0.6802,0.0,3.86,70.0,True,,35.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,14.89,2.6946,0.3425,0.0,4.153,102.0,False,True,29.3,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,17.101,2.5744,0.4011,0.0002796344201368344,4.957,,True,False,47.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,SAS,22.71,4.0561,0.624,7.861546307433994e-07,4.508,77.1,True,False,37.1,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AFR,,1.0196,0.1579,0.0021356257414684907,1.458,56.5,False,True,39.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,EUR,29.137,5.2802,0.7548,0.0,3.066,72.8,True,False,40.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,AFR,2.486,-0.267,0.1062,0.00031436856992024,-1.579,71.5,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,5.989,1.6682,0.1332,,-0.264,77.6,True,False,61.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,28.59,4.2165,0.5993,0.0,,72.1,True,False,48.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,5.841,0.2604,0.2143,0.01885762656694298,3.277,77.9,False,False,46.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,SAS,9.224,1.7698,0.0772,0.0003744788934078023,0.784,,True,,41.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,,2.874,0.6692,0.0242,0.018960485389455772,1.037,83.1,False,False,69.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,17.061,3.7854,0.4058,0.00019373804747897872,1.349,79.3,True,False,43.7,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,AFR,4.986,1.2239,0.1169,0.0006417340013308847,1.173,91.7,False,False,41.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,EAS,34.488,5.2749,0.7467,0.0,3.247,97.6,True,,47.9,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,frameshift,AFR,25.747,4.1522,0.6026,0.0,6.948,106.0,True,,25.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,23.341,3.3261,0.4336,0.0,5.459,62.6,True,True,30.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,10.516,2.139,0.2959,0.00030411178059092927,0.062,88.0,False,True,43.5,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,frameshift,EUR,9.591,1.5619,0.2699,0.25503599552580186,0.349,65.0,True,False,52.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,11.72,2.0493,0.3697,0.0018679545300253476,,77.8,True,False,60.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,35.89,6.4677,0.988,0.0,3.551,81.7,True,True,22.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,,AFR,3.993,1.7346,0.2695,0.12580895808366788,0.18,59.5,True,,62.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,28.845,3.83,0.7119,4.177413469781598e-06,4.671,72.4,True,True,22.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,23.075,3.6645,0.5328,3.0221203736219656e-07,4.786,93.7,True,True,39.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,30.445,5.1962,0.7741,8.779593266015966e-05,2.733,74.4,False,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,nonsense,AFR,30.674,4.3778,0.788,0.0,5.751,66.7,True,True,31.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AMR,20.572,2.2791,0.5008,2.283331137828874e-06,5.464,86.6,True,False,54.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,nonsense,EUR,8.942,1.8884,0.18,0.0013468834608689648,-1.156,72.6,False,,56.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,SAS,18.023,3.7337,0.4982,2.7914665485984598e-05,4.144,71.4,True,True,32.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,6.008,0.9386,0.1067,0.061434329836386074,-1.98,76.2,True,True,50.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,EUR,36.223,6.2506,0.9153,3.950011290978114e-07,1.407,77.5,True,True,20.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,19.905,2.5285,0.6086,2.62542508893993e-06,4.071,89.3,True,True,29.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,AMR,21.231,1.9745,0.5597,0.0002448470833517187,3.332,53.8,False,True,32.7,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,AFR,28.876,4.0663,0.8585,4.9927258439899565e-06,2.906,79.6,True,True,35.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,22.961,4.4497,0.5566,7.6272985459929885e-06,,72.4,False,True,29.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AFR,26.338,4.8951,0.575,0.00037065980204856934,2.487,69.7,True,True,20.7,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,23.073,3.2232,0.489,4.007062672762103e-06,6.424,71.4,True,True,23.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,3.088,0.6008,0.0,0.0016072192818738862,-2.271,66.7,False,False,62.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EAS,,1.508,0.2476,0.0005241890611800266,-1.927,56.5,False,True,42.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,frameshift,AMR,29.546,5.1205,0.7482,0.0,0.847,91.9,True,False,41.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,16.091,1.8828,0.4566,0.00016748262090756608,2.914,124.8,False,True,50.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,frameshift,SAS,28.501,5.3157,0.6651,0.0,1.505,61.9,False,False,33.1,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,,1.3266,0.1695,0.17543394954579614,3.029,99.5,False,False,63.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,19.959,4.3731,0.4543,0.0,1.135,75.0,False,False,56.4,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EAS,12.626,2.938,0.321,0.00011557196141889334,3.232,78.7,False,,45.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AFR,12.248,2.7729,0.2622,0.14924457255381673,-1.128,69.0,False,True,42.6,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,,28.911,4.7729,0.7341,2.914083838651004e-07,5.088,89.7,False,False,36.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,frameshift,EUR,,1.3166,0.2107,0.0012021257344443565,3.052,84.7,False,True,41.1,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,SAS,40.0,5.1389,0.946,0.0,5.258,66.7,True,False,44.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,,34.683,5.6523,0.933,1.843132573765684e-05,4.622,77.5,False,,22.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,0.0,-0.9107,0.0,,2.895,103.2,False,True,46.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,6.269,0.5867,0.1352,0.3390171630923157,0.276,127.9,False,False,57.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,16.0,1.7186,0.4466,0.15720427031713405,-0.16,98.3,False,True,34.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,AFR,25.563,3.676,0.6514,1.1153744238228859e-07,4.696,58.6,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,,EUR,9.969,2.308,0.1706,0.0003923127023047935,-0.623,97.1,False,False,,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,24.068,3.8288,0.6731,1.8537299829439893e-06,2.965,110.6,True,False,50.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,21.63,3.7984,0.4363,1.0522370747815123e-06,2.207,94.0,True,False,47.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,26.177,4.9844,0.652,1.7620064826069233e-06,1.565,41.8,True,False,25.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,20.811,3.661,0.5858,0.0,5.86,76.2,True,True,40.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,SAS,17.709,3.0199,0.3709,0.001730360628518639,1.27,69.0,False,False,46.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,frameshift,EUR,22.984,2.9117,0.599,0.0007544229203117707,2.355,69.5,False,False,56.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,8.604,1.4448,0.1494,0.0007646964988161142,,78.8,False,False,57.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,AFR,14.453,2.5007,0.402,1.6278139653055708e-06,1.835,75.2,False,True,37.5,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,7.326,1.4727,0.2155,0.03145009184998186,,76.1,False,False,65.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,33.881,4.7028,0.8558,,3.899,72.4,True,True,27.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,0.0,0.5047,0.0,0.2045475098605554,0.148,57.2,False,True,49.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AFR,31.111,4.6761,0.7515,0.0,1.104,63.5,True,False,32.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,12.131,2.0345,0.3397,0.0007984570285031999,3.56,70.9,True,False,52.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,AMR,13.063,2.9956,0.3323,1.6715004284098567e-05,2.453,79.8,False,True,36.2,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EAS,,-0.1812,0.1528,0.07262083889579347,2.468,64.8,False,False,61.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,16.053,3.1915,0.3626,0.0009016353320723823,2.873,84.0,True,,39.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,AFR,4.145,1.4142,0.2049,0.04630416045912266,0.859,76.5,False,True,47.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,SAS,26.545,4.6166,0.578,2.288792216503245e-05,3.729,85.0,True,False,41.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,,EUR,27.428,3.6014,0.6393,0.0,2.616,77.8,False,False,35.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EAS,9.11,1.4432,0.357,0.004503678245499165,-2.745,92.1,False,True,37.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,17.744,2.921,0.5907,0.0009340728595665832,2.105,80.6,False,False,43.3,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,25.854,3.8268,0.7642,1.3188578252284768e-05,4.859,75.4,True,False,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,7.385,1.449,0.1132,0.0009875758220039377,3.449,77.4,False,True,40.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,22.825,4.4844,0.5721,1.017369668642737e-05,4.221,83.2,True,False,46.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,26.319,4.7482,0.7342,0.001978955463745028,2.851,52.6,False,False,53.4,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,EUR,25.716,3.9005,0.5867,0.0,2.668,65.8,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AMR,4.472,1.283,0.0303,0.020561477588812015,-0.455,70.3,True,True,54.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,32.22,5.0633,0.8085,0.0,3.87,97.9,True,False,47.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,nonsense,EUR,21.551,4.3184,0.4617,0.0,4.293,94.2,True,False,48.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EAS,16.76,2.7997,0.3917,0.0,-1.362,,False,False,56.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EAS,25.955,3.1444,0.6342,5.437540704122841e-07,3.361,62.7,True,True,27.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,EUR,21.909,3.1906,0.6023,0.0,2.292,69.6,False,False,56.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,SAS,19.36,3.6866,0.5314,1.1658251530429602e-05,,116.3,True,False,60.1,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,EUR,33.517,4.3397,0.7596,,4.303,105.4,True,False,30.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,29.292,4.3721,0.6464,,4.587,79.3,False,True,22.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,12.142,2.589,0.2172,0.006389294979385951,2.797,79.8,False,False,45.5,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,20.488,3.9572,0.4889,0.0006251350809221221,0.591,80.4,False,False,38.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,28.46,5.5894,0.5935,5.51930127483389e-05,,91.2,True,True,32.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EUR,16.434,3.2,0.4478,0.0005077844049985684,2.488,56.4,False,False,57.1,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,4.856,1.3494,0.1594,0.0011585649534158013,0.173,75.2,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,12.211,2.2893,0.3043,0.031468419404888356,,101.3,False,False,53.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,frameshift,AMR,18.737,3.4237,0.5156,6.289074251002711e-05,3.051,89.3,True,True,53.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,SAS,21.645,2.2769,0.5902,0.0,4.128,75.9,,False,48.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,AMR,14.225,2.8293,0.3911,0.0,0.268,88.6,False,False,54.0,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,SAS,11.97,1.7871,0.3206,0.002477854044306475,2.83,99.4,True,False,48.4,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AFR,23.994,3.205,0.6214,1.3330713365284092e-05,-1.989,77.7,False,False,51.8,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,frameshift,SAS,23.763,3.2595,0.5486,0.006745411059086789,2.299,81.3,False,,17.2,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,nonsense,SAS,25.458,4.3572,0.6744,6.897054393305224e-05,4.332,55.8,True,False,30.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,EAS,29.766,5.5649,0.7062,1.8077834473257797e-05,1.4,64.0,False,False,32.1,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,AFR,35.497,4.1787,0.8182,0.0,6.277,96.8,True,False,26.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,21.058,2.7036,0.5354,1.1840759367773228e-05,-1.185,90.5,False,False,48.5,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,nonsense,AMR,17.046,3.0579,0.506,1.0510235018086518e-06,4.614,82.8,True,True,33.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,25.549,3.508,0.74,1.0546464072751156e-05,3.492,99.4,False,False,42.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,30.107,4.3042,0.8597,6.160145873831682e-05,3.307,68.3,True,False,31.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,35.617,6.3607,0.9496,2.8800942649758477e-06,4.466,65.6,True,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,AMR,25.563,3.6056,0.6815,1.1934510287364004e-05,2.589,100.6,True,False,34.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,9.981,0.8108,0.3206,0.050678058262241595,1.375,71.6,False,False,50.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,EUR,,5.8771,0.7811,8.067945465944107e-05,5.976,90.1,True,False,51.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,9.358,1.0647,0.2032,0.2162175803616338,-4.383,83.4,,,61.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EAS,6.349,1.7737,0.1411,0.04551799404212986,1.024,68.5,True,False,50.9,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,,23.212,4.218,0.5231,0.0,2.374,76.5,False,,35.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,7.575,1.3077,0.1795,0.006504056259739378,-1.296,62.8,False,False,59.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,21.749,3.179,0.6483,0.008028583448757324,1.691,,False,False,50.1,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EAS,,4.8928,0.8496,5.758596057039195e-05,1.531,78.6,True,True,22.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,24.424,3.8443,0.6074,1.459084214619811e-05,4.335,73.7,True,True,39.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,5.144,0.8181,0.2242,0.4088393722233132,2.616,73.0,False,False,56.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EAS,33.996,5.2186,0.7548,0.0,4.199,79.0,True,False,47.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,20.3,3.1969,0.5618,0.0002898673626761398,3.38,59.1,True,False,39.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,21.415,4.0274,0.6149,8.556816871165122e-05,7.719,69.9,True,True,27.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,EUR,31.608,4.2911,0.7797,0.0,3.73,82.8,True,False,43.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,16.745,2.3674,0.4128,7.593030339827701e-06,4.788,80.7,True,False,44.8,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,24.689,3.6943,0.751,1.780138505901045e-06,2.96,93.8,False,False,36.8,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,EUR,12.682,1.9131,0.0741,0.0004112115509531812,1.499,95.5,True,,53.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,28.669,3.5548,0.7382,0.0,5.864,54.6,True,False,41.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,,9.238,2.651,0.1924,0.10809258942412914,1.328,68.8,False,True,40.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,10.574,0.9433,0.262,2.702874510246287e-06,3.545,80.4,False,False,57.4,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,10.719,1.5683,0.3142,2.2073140875107078e-05,0.703,89.2,False,False,51.2,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,7.87,0.8765,0.204,0.0018612513865949012,3.961,67.6,True,False,55.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AFR,16.134,3.1011,0.4561,7.636205797883918e-06,2.08,88.7,True,True,39.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,20.942,3.7812,0.5829,4.0552616400849605e-06,4.809,65.6,True,False,52.8,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,27.826,3.5084,0.7283,6.78705897464828e-06,3.905,78.2,True,True,27.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,24.998,3.4006,0.5954,0.0,2.249,72.3,True,True,40.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,7.442,0.7343,0.2154,0.006303025391954029,2.013,82.6,False,True,53.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,3.956,0.9085,0.0,0.00010264108327036674,0.368,89.8,True,False,51.3,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,15.927,2.9743,0.4276,0.00028637587730962345,0.433,72.7,True,False,55.5,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,2.42,0.6623,0.1105,0.023082706018080688,1.133,81.9,False,False,57.2,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,35.584,6.0677,0.878,0.0,5.715,81.6,True,False,33.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,34.643,6.046,0.9333,0.0,5.005,58.7,True,True,26.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,,28.893,4.0077,0.6686,0.0,1.715,61.7,,False,35.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,EUR,28.123,4.6515,0.5598,0.0,3.475,98.7,False,True,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,11.485,0.2422,0.3701,0.00019553841007556667,,74.1,False,False,40.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,30.548,4.8693,0.7152,1.3582279195411017e-06,4.534,99.2,True,False,39.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,3.738,0.8723,0.1079,0.00032963560696445336,4.352,74.1,False,False,59.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,9.441,0.7602,0.2625,0.0250642983345176,-0.583,74.8,False,True,46.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,10.639,1.4847,0.2841,1.432358235796046e-05,1.408,90.7,True,False,53.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,11.961,1.7577,0.2613,0.024123726447053184,1.291,79.4,,False,42.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EAS,9.394,1.1707,0.2551,0.13326526067468936,2.638,90.1,,False,41.2,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EAS,37.035,6.975,0.8942,0.0,,70.2,True,True,24.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,13.92,1.9371,0.2259,0.04197733566391581,-2.381,66.1,False,True,40.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,14.099,2.856,0.3981,1.0595425562083654e-05,2.907,91.0,True,True,41.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,17.441,3.6909,0.4056,7.303650153296671e-06,0.884,52.6,False,False,39.5,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,21.396,3.7441,0.6293,0.0,2.87,72.9,False,True,23.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,,32.915,5.1672,0.8126,0.0,,79.5,False,False,34.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,7.595,2.3749,0.1931,0.061488113899798066,1.782,90.0,False,True,37.0,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,nonsense,AMR,23.079,3.7232,0.5585,0.0,2.808,64.6,False,True,46.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,10.686,2.0318,0.2335,0.0008563110986684184,-1.631,56.3,True,False,62.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,AMR,27.461,4.3837,0.6382,2.2954919824504599e-07,4.043,86.6,False,False,38.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,,26.316,4.1439,0.6581,0.0,4.603,95.7,True,False,52.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,9.545,1.2539,0.1767,0.0008220537792066937,-0.584,94.2,False,False,34.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,12.953,1.2289,0.3359,0.0004717107216440422,0.725,72.2,False,True,31.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,,2.323,-0.3885,0.0776,0.014006492181667428,-1.238,102.3,False,False,47.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EAS,6.604,1.6303,0.2312,0.013941178057275398,2.012,93.3,False,True,48.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,26.296,4.8091,0.6417,0.0,0.711,86.5,True,False,38.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,16.498,3.0592,0.4775,4.408570995684236e-05,1.11,43.2,,False,47.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,29.412,5.4413,0.6021,0.0,3.057,74.3,False,,37.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,23.283,3.9573,0.5934,1.9332004874999178e-05,0.963,49.5,True,True,25.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,28.524,3.8063,0.7503,0.0,3.751,72.9,True,True,24.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,16.677,3.4113,0.4208,0.0,4.737,95.4,True,False,47.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,15.268,3.0897,0.4773,0.039383295892347917,0.369,76.1,False,False,45.4,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,11.951,1.991,0.373,0.0013862236797437066,1.084,118.3,True,True,27.0,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,nonsense,EAS,,3.4738,0.5999,1.8290570135213096e-07,5.572,90.2,True,False,40.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,21.251,3.8747,0.5155,3.724498196601481e-05,0.921,97.7,True,False,38.0,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,28.993,5.4719,0.7568,4.036025560316619e-06,4.066,64.5,True,True,34.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AFR,37.654,6.8159,1.0,1.8148367479614646e-07,4.658,84.3,True,True,13.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,,16.398,2.1037,0.4859,0.0006019368234590783,0.882,94.1,True,False,51.9,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,AMR,,3.6244,0.5308,6.950189464331976e-07,4.142,71.4,True,False,51.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,frameshift,EUR,26.605,5.0706,0.6286,0.0,6.882,68.6,True,True,21.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,3.842,1.1514,0.0256,0.10269774768070963,0.024,81.4,False,False,40.8,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,6.551,1.1484,0.1767,0.0006565710618521997,-0.643,75.3,False,False,63.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,2.481,0.01,0.0611,0.00014208541100403324,-0.138,104.7,False,False,63.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,SAS,15.429,2.3995,0.3546,4.2959927447178324e-06,2.576,70.2,False,True,40.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,23.611,4.4185,0.5066,4.219618054796361e-07,0.629,114.5,True,False,35.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EUR,,6.2406,0.8561,0.0,5.086,75.3,True,False,43.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,23.043,4.5256,0.6327,0.0,3.292,89.2,True,False,49.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,frameshift,AFR,33.535,4.7728,0.7928,0.0,3.335,77.8,True,False,54.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,3.372,0.6245,0.0023,0.008688775721124375,-0.263,65.8,False,False,38.9,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EUR,14.66,2.3288,0.2689,0.001128649930914187,-1.616,88.7,True,False,55.2,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,18.89,2.9384,0.4158,2.3080956983341137e-06,4.202,51.4,True,False,44.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AMR,19.661,2.8724,0.3855,0.0,5.826,78.3,False,False,40.1,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,AFR,3.272,0.2815,0.0,0.011298758487409704,3.132,101.4,False,False,54.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,,17.208,3.4049,0.3939,3.252693540445044e-06,3.242,82.0,True,False,54.4,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,frameshift,AMR,18.143,2.4999,0.4984,,4.965,76.3,False,True,39.6,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,SAS,6.093,1.1353,0.1813,0.011283749881026827,1.529,109.2,False,True,43.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,,4.3095,0.5766,0.0,4.614,73.5,False,True,47.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,EUR,40.0,6.458,0.9385,4.294929042395413e-06,0.674,73.8,True,True,28.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,,21.233,4.1829,0.5197,7.548412335830115e-05,1.459,62.9,False,False,44.1,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,EUR,32.107,4.6995,0.6846,0.0,5.42,80.1,True,True,12.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,32.551,4.8126,0.8259,1.675086040058211e-07,4.372,76.1,False,True,30.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,nonsense,EUR,27.14,2.5135,0.678,1.3294295724120635e-07,3.401,48.3,True,True,27.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,18.838,3.3213,0.6051,0.00017391389298389138,2.323,101.8,True,False,48.7,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,nonsense,AFR,13.955,2.1085,0.3485,2.457137343965744e-06,3.211,104.4,False,,56.9,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,AMR,5.184,1.5704,0.1033,0.0005612024497469951,0.784,104.0,True,True,24.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,nonsense,EUR,25.113,3.959,0.5261,0.0,4.881,91.8,False,True,26.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,21.308,4.2352,0.4543,0.0,3.798,71.8,,False,59.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,nonsense,EUR,21.566,3.1437,0.4701,0.00010470541599469501,0.191,97.1,False,True,34.7,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,EUR,23.6,3.7756,0.595,2.0553027921515338e-05,0.5,82.2,False,False,34.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,16.643,2.5857,0.3994,0.0,-0.624,79.4,True,False,32.4,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,34.708,5.891,0.7328,0.0,3.74,89.5,True,True,33.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,,0.0596,0.1158,0.0006474992049049762,0.739,96.8,True,True,41.5,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,frameshift,EUR,5.399,0.4255,0.1139,0.003407325896013376,2.387,91.0,False,False,50.3,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,AMR,26.005,3.824,0.6356,0.0,2.634,75.7,True,True,44.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,13.502,1.3249,0.3227,0.2658153976817579,-1.546,71.8,False,True,47.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EAS,8.622,1.6483,0.2455,0.0008268204932509808,-0.705,90.9,False,False,49.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,AMR,19.545,2.8487,0.4482,1.2010874998539444e-06,5.575,66.8,,True,40.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AFR,21.821,3.522,0.4984,0.0,4.422,68.6,True,True,29.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,12.067,2.3047,0.1994,0.03472856362025733,0.25,74.7,False,False,60.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,22.495,3.1027,0.5933,0.0013813718573787213,6.152,64.8,True,False,34.3,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AFR,13.489,2.0646,0.4586,0.0011488254963811795,-0.646,72.9,False,False,44.6,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,10.926,1.994,0.1563,0.0027307697466707605,5.358,61.1,True,True,45.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,9.229,1.4794,0.2046,0.015962792733180655,1.528,83.3,False,,54.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,12.168,1.9005,0.2611,0.0001495556718412523,1.338,56.2,False,False,55.7,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,25.575,4.4135,0.653,0.0,3.346,102.5,True,False,,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,AFR,18.361,3.0777,0.3578,0.004716844195801277,3.558,88.0,True,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,,SAS,19.905,4.4879,0.479,3.1421895325133866e-06,-0.991,79.5,,True,39.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,SAS,25.429,3.8193,0.6516,,0.352,67.7,True,,46.8,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,EAS,,4.2972,0.5231,1.0223897054010328e-06,-0.021,80.1,True,False,32.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,5.369,1.287,0.2336,0.004639864558065499,0.796,80.6,False,False,46.7,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,EUR,36.49,6.3418,0.8602,0.0,4.679,74.7,True,True,23.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,14.242,2.2299,0.2581,0.36468210946437796,0.578,71.8,True,False,53.9,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,24.431,4.2921,0.5676,0.0002617752146049943,4.28,58.9,True,False,48.6,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,AFR,5.032,0.9254,0.1147,0.0005815631695856719,1.445,65.0,False,True,34.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,19.725,3.3507,0.5428,9.290408109361945e-06,-0.173,85.6,False,False,44.7,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,11.439,1.6537,0.3076,0.004182652836056377,2.96,79.5,False,True,50.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,27.432,4.4347,0.676,0.00017517701082163335,1.782,56.6,False,False,46.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,3.242,-0.3352,0.0833,0.44073397033429185,-0.127,85.0,,False,71.3,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EAS,6.776,0.5561,0.2403,0.0003231922184185535,0.21,86.4,False,False,63.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,AMR,12.35,2.0766,0.3773,0.00016894235356491492,1.491,96.4,False,True,48.4,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,3.91,0.435,0.068,0.1572309186333364,-0.361,101.6,False,True,46.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,11.287,1.8654,0.2516,0.0008079274952664656,1.009,63.2,True,False,55.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,AMR,14.244,2.8263,0.3334,0.0,-0.677,75.1,True,False,45.4,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,15.213,2.0362,0.2876,0.0,0.066,72.4,True,False,52.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,SAS,15.416,2.9083,0.3172,0.005856124008433413,3.102,100.3,True,,19.9,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AMR,35.924,5.537,0.8757,4.024448779872797e-06,6.542,91.3,True,False,34.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,nonsense,AFR,4.53,0.4616,0.0,0.0006329888495839416,0.408,75.9,False,True,40.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,frameshift,AFR,23.612,3.7693,0.6104,0.0038162726018751733,2.083,86.4,False,True,31.4,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,frameshift,AFR,27.488,5.837,0.6642,2.9291694899769653e-06,3.071,85.5,True,True,38.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,AFR,21.827,3.9293,0.6117,0.0,4.529,109.3,True,True,33.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,8.8,0.6572,0.2629,0.41741037047397334,1.031,103.8,True,False,32.9,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,12.12,2.7291,0.2175,0.0388287835354387,-0.439,73.9,False,,42.6,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,AMR,26.026,4.0865,0.6345,0.0,3.275,87.4,True,True,26.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,nonsense,EUR,,-0.9659,0.1446,0.003217640564425678,1.109,83.9,True,False,53.2,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,23.816,2.8812,0.6585,0.0,1.752,91.3,False,False,43.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,frameshift,,18.814,3.3783,0.4884,0.33359552349555455,-0.185,95.2,False,True,39.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,4.318,0.0731,0.1174,,4.12,100.8,True,True,48.4,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,frameshift,AMR,22.069,3.63,0.5248,0.006400441967427009,4.93,107.7,False,False,50.2,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,AMR,26.85,4.5466,0.7083,6.019781049296394e-06,4.484,68.3,False,False,42.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,nonsense,,27.776,5.1931,0.856,0.0,3.717,70.3,True,True,26.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,11.23,1.9816,0.168,0.2652109320273816,-1.263,81.3,False,False,41.4,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,5.916,1.0838,0.2082,0.0002219296652299889,1.349,68.3,False,False,52.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,nonsense,AFR,23.856,2.7146,0.4656,4.834473651160716e-06,2.924,72.1,True,True,28.9,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,2.408,0.6078,0.0,,3.159,78.3,False,False,54.3,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,EUR,12.17,1.9461,0.442,0.018584170705952818,,69.0,False,False,61.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,18.085,3.0611,0.4102,1.6036090920680984e-06,0.311,114.6,True,True,42.2,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,,5.0966,0.7425,0.0,3.948,68.8,True,False,35.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,SAS,9.824,1.9787,0.3104,0.002273202711883332,-0.583,76.7,False,False,72.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,30.04,4.6116,0.7331,0.0,4.922,106.3,True,True,28.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,17.645,3.2437,0.3925,0.0,0.672,69.3,True,False,38.7,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,12.434,1.3605,0.3565,,-3.813,100.5,False,False,50.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,,EUR,28.506,5.1633,0.6637,0.0,3.104,55.3,True,False,42.9,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,nonsense,AMR,24.457,3.854,0.4445,1.1329756766109429e-07,2.207,85.2,False,False,53.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,5.488,1.331,0.1517,0.018281364485990728,-0.494,78.0,False,False,58.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,nonsense,AMR,24.544,3.118,0.6286,7.3515055495819256e-06,3.06,81.4,False,False,37.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,AMR,12.874,2.2102,0.3811,0.0006814105260086221,1.285,80.6,False,False,41.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,8.016,0.9791,0.2098,0.03747754678883573,0.053,61.2,True,False,59.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,,23.744,3.6144,0.5284,4.0299088441746265e-06,1.337,91.5,True,True,41.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AMR,26.117,3.9888,0.6739,0.0,2.766,60.4,True,False,55.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,nonsense,EUR,23.107,3.7526,0.6279,2.062270426582965e-05,1.958,115.0,,,42.9,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,EUR,15.584,2.1558,0.4093,0.0025034017135271117,-2.01,78.5,False,False,39.7,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,EUR,32.007,5.6052,0.8101,1.1299253922317261e-05,1.752,64.1,True,False,32.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,EUR,13.023,1.7206,0.2785,0.003159970725379164,4.946,79.2,False,,51.2,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,EUR,18.404,2.9614,0.5205,1.7939295580172688e-06,2.493,108.8,True,False,51.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,29.705,4.5347,0.7207,0.0,6.341,61.5,,False,30.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,SAS,17.922,4.383,0.4576,6.092486054586482e-05,,88.1,True,True,47.3,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,SAS,5.557,1.7597,0.1303,0.007544693520926535,2.155,69.4,False,False,56.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,8.495,0.7677,0.2716,0.0006034655104167157,1.248,68.8,False,True,36.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,10.169,1.6405,0.3568,0.00011004997708362671,-1.441,72.3,False,True,32.9,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,AFR,33.392,5.7893,0.8759,4.4244727538928396e-07,1.362,66.8,True,False,36.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,frameshift,AMR,10.741,1.3513,0.3401,0.004764841847638591,-0.045,77.7,False,False,58.5,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,11.697,2.7315,0.3664,0.00014353024557999913,-1.267,71.1,,True,41.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,SAS,22.672,3.0737,0.5052,,3.134,89.9,False,,25.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,3.587,0.0369,0.1506,0.000585051527763699,-1.006,61.3,True,,63.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,2.486,-0.267,0.1062,0.00031436856992024,-1.579,71.5,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,AMR,29.643,5.0071,0.8642,2.1571554771902068e-06,3.493,92.5,True,True,30.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EUR,3.918,0.1815,0.0634,4.4207136898795365e-05,2.263,85.1,False,True,,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,AFR,33.918,6.2269,0.8849,0.0,5.766,59.8,True,False,39.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AFR,12.513,2.2173,0.2275,0.00027727801190127114,-1.256,102.3,False,False,46.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,40.0,5.8905,1.0,1.796338529349649e-05,,94.3,True,True,28.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,23.068,3.9465,0.5455,0.0001657734784391233,0.924,72.4,False,True,43.7,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,SAS,,1.1981,0.1824,0.04474781359789116,0.751,72.3,False,False,53.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,EUR,16.016,3.4784,0.4395,0.004159195531500795,0.611,67.8,False,True,34.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,21.715,4.0276,0.5536,0.0,2.016,74.6,False,True,38.3,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,nonsense,EUR,12.743,1.0038,0.3731,8.011810348185398e-06,-1.69,58.6,True,False,40.8,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,,4.5593,0.7955,6.4550491186523455e-06,-0.985,91.2,False,False,51.3,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,SAS,16.874,2.7758,0.4153,6.563712721760416e-06,3.247,59.5,False,False,50.7,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,22.326,2.6043,0.4695,0.0,2.971,84.4,True,True,38.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,10.116,0.9621,0.2742,0.005149922297077791,1.231,90.7,True,,58.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,25.392,3.6223,0.5854,0.006559874364839153,2.592,100.7,False,False,40.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,6.805,1.6159,0.1628,0.0050652205434987595,-0.92,76.9,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,,28.143,4.0608,0.7428,,3.553,87.0,True,False,49.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,3.976,0.3968,0.0291,0.0006759858963742692,0.817,98.9,False,False,58.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,32.145,5.515,0.8335,0.00017900179566899537,2.016,69.6,False,True,32.0,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,EUR,26.093,4.1924,0.7022,0.0034338700020031233,1.346,74.6,False,True,39.2,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EAS,3.131,0.7078,0.1177,0.0007178570881032809,-0.075,90.8,False,False,54.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,frameshift,AFR,31.438,4.9839,0.7428,0.0,3.581,60.1,True,True,29.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,10.593,2.4767,0.2071,0.012063753594670079,0.96,73.9,False,False,63.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,29.453,4.8351,0.6974,0.0,5.897,103.5,True,True,37.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,25.858,4.4283,0.6397,0.0022915230381603973,4.747,78.2,False,False,32.1,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,AFR,11.541,1.4201,0.3113,0.0013607519337389708,4.163,60.8,False,,38.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,frameshift,AFR,16.708,3.2347,0.5318,1.4631191163067878e-05,4.104,89.8,True,False,36.0,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AFR,,2.7003,0.4342,0.00012726655744820078,-0.354,82.7,,True,44.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,frameshift,,15.217,3.2173,0.3927,3.6027796660243456e-05,0.08,97.5,True,False,49.8,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,30.409,4.9894,0.7139,0.00044437787697940617,1.692,58.5,False,True,43.0,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AFR,24.262,4.1494,0.6756,1.3452745338929912e-05,1.154,74.0,True,False,47.4,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EUR,27.846,4.2139,0.5164,0.006189712182897622,2.45,87.7,False,,36.7,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,0.0,1.616,0.0,2.5848398465938045e-06,0.368,80.0,False,True,47.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,AMR,10.158,1.6071,0.287,1.5963664595533618e-05,0.948,69.8,False,False,50.6,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,SAS,4.834,0.3143,0.1272,0.0002944269649310599,-0.661,68.6,False,False,65.1,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,20.888,2.686,0.6121,0.0006551327175495996,,103.4,True,False,22.7,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,13.867,2.5984,0.295,0.0,1.253,68.8,False,False,57.9,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AFR,23.439,4.5154,0.5154,1.221981912861752e-05,3.047,71.9,True,True,33.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,,23.692,4.0902,0.636,0.0,6.402,84.6,True,False,45.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EAS,3.273,-0.2005,0.1166,0.00020245433380912758,0.158,66.6,True,True,44.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AFR,15.847,2.1966,0.4405,0.0,-0.865,83.6,False,False,43.1,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,36.532,5.9561,0.8461,0.0,1.228,71.2,True,False,40.6,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,AFR,17.118,2.9571,0.5203,0.008222220913780767,-0.963,99.4,True,True,35.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,nonsense,SAS,34.263,5.3279,0.9248,0.0,5.243,79.7,True,,20.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AMR,13.342,2.9066,0.3409,0.0,0.889,64.5,True,False,39.4,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,22.156,3.115,0.5423,0.0,1.734,43.3,True,,35.4,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,frameshift,AMR,34.319,5.6012,0.658,3.506079683630165e-07,2.978,106.2,True,True,33.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,8.469,1.5865,0.1315,0.0003735138422106611,-0.328,77.6,False,True,46.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,SAS,18.418,3.4757,0.3945,9.612489955864296e-05,1.106,65.8,,False,55.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,EAS,33.313,4.8935,0.7738,0.0,5.824,115.2,True,True,25.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,AFR,29.65,4.3892,0.9145,0.0,5.889,62.8,True,False,38.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,15.205,2.3541,0.4642,0.11251528762902849,-1.761,93.5,False,False,55.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EAS,27.712,4.3567,0.6864,7.628269403141041e-05,4.977,100.6,True,False,34.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,AFR,22.781,3.7633,0.5855,0.00021539451068586948,,96.5,False,False,43.9,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,,1.875,0.21,0.002280689488067325,-1.462,47.0,False,False,59.6,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,7.791,1.2721,0.2577,0.012371573896421805,-1.769,88.3,,True,51.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,7.952,1.9204,0.2464,0.009471134989937072,-0.39,82.4,False,True,30.6,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,AMR,16.835,3.053,0.437,0.0008353058435185406,3.016,81.5,False,True,30.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,6.815,0.9399,0.1101,,-0.195,74.7,False,False,68.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,7.497,1.8657,0.1036,0.05250778717829521,-0.35,64.5,False,True,33.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,EUR,26.86,4.7428,0.6184,0.0,3.515,67.8,True,True,30.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,25.265,3.8992,0.5683,0.0015018926438846592,1.785,76.1,False,True,41.0,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EUR,8.537,1.3415,0.2242,0.07286446257310485,1.712,93.3,False,False,62.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,2.996,0.9923,0.1093,0.04572543032835187,1.041,81.6,False,False,50.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,3.84,0.8317,0.0,0.0653817152481612,1.343,73.1,False,False,40.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,12.709,0.6846,0.2589,1.04687581458553e-05,-1.441,101.6,False,False,37.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,,26.916,3.7787,0.5961,0.0,4.605,57.1,True,False,38.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,9.41,1.1261,0.3472,0.00553275259399255,-0.719,129.8,False,True,42.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,AFR,10.792,1.6164,0.3352,3.553323164816267e-05,3.165,83.5,False,True,56.9,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,15.064,2.579,0.3694,2.2198392083748247e-05,4.537,90.8,True,False,60.6,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,nonsense,SAS,26.928,4.2319,0.7877,0.0,2.393,82.5,True,False,41.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,7.767,1.9717,0.1496,0.12521966850293517,5.638,83.9,False,True,31.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,SAS,35.51,6.872,0.8913,2.4850653385912823e-05,2.322,79.5,True,False,18.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,nonsense,AMR,23.93,3.7724,0.5597,5.1778877089550746e-05,2.292,69.9,True,True,30.5,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,AFR,14.404,1.8686,0.2926,1.7376094327587236e-05,1.608,68.5,True,True,45.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,AMR,12.602,2.0509,0.1848,0.0014332120287866572,3.535,84.8,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,EUR,35.274,5.2269,0.9015,0.0,2.809,98.5,False,True,23.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,16.73,2.8569,0.4334,0.009944585993193507,2.141,75.2,True,False,55.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,16.519,2.9974,0.3563,7.353611956106959e-06,2.278,80.1,False,False,49.1,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AFR,11.94,2.5165,0.255,0.000588971836494798,-1.459,101.4,False,False,49.4,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,19.199,3.3815,0.5346,0.0,0.325,87.5,False,False,51.6,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,frameshift,EUR,26.93,3.8116,0.6316,0.0,3.016,65.3,True,False,33.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,,0.2388,0.1842,0.07771332382109235,-0.471,82.0,False,True,30.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,nonsense,EUR,23.717,4.048,0.5096,1.5742335296856476e-06,3.348,45.1,False,False,50.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,nonsense,,9.918,1.1847,0.198,0.0007661797763751087,-1.29,73.3,False,False,58.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,SAS,0.629,0.1436,0.0,0.032101386679734466,-0.196,95.0,False,False,63.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,AFR,34.921,4.8895,0.8109,2.1429661770697858e-07,5.919,101.1,True,True,28.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,24.564,4.323,0.4817,0.0,3.62,91.6,True,,27.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,20.429,3.1555,0.4378,0.0,2.561,71.9,True,True,24.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,14.153,2.6717,0.3036,0.005117854335141249,5.495,105.8,True,False,64.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,,1.8401,0.3164,0.0006836393659168939,-0.065,99.1,False,False,53.9,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,9.153,2.2934,0.2636,0.24480044620789476,-0.686,90.0,False,False,45.1,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,11.11,1.9123,0.3008,0.23005737675072957,,97.3,False,True,29.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,9.343,1.1786,0.2479,0.0002618350098080846,1.835,66.3,True,True,36.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,AMR,13.968,3.0123,0.257,0.002388809030651295,2.326,83.9,True,False,62.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,2.632,0.7407,0.0336,0.08966031253051489,4.121,66.3,False,True,42.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,25.158,2.6559,0.5381,1.4339911173839557e-05,2.216,68.0,,False,32.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,10.854,1.5177,0.1293,0.022524295764889377,-0.743,89.7,False,False,35.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,14.943,2.7266,0.2743,0.240479926069753,1.075,76.8,True,True,30.0,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,missense,EUR,22.839,3.6912,0.6164,4.189982582200573e-05,1.254,87.7,False,,,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EAS,5.262,1.3482,0.1123,0.0002804481802784353,-0.079,59.4,False,True,39.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,SAS,26.308,3.92,0.6045,0.0,3.24,85.5,True,True,40.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,14.99,2.2174,0.3712,0.0027831504173172514,3.079,80.2,True,False,55.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,8.932,1.2504,0.3641,0.008816327670705858,2.853,85.7,False,False,46.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,4.735,1.0434,0.0475,0.0029048420171462882,-3.571,77.7,False,False,53.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,16.361,3.2809,0.4684,0.0,0.908,72.2,False,True,37.9,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AFR,21.251,3.8747,0.5155,3.724498196601481e-05,0.921,97.7,True,False,38.0,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,8.827,1.2116,0.1262,0.3210632374051366,0.154,,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,,8.021,0.7538,0.3091,0.002465576075116843,1.186,,False,True,53.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,5.783,1.793,0.1585,0.32894759577699856,-0.235,86.3,True,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,AFR,34.398,4.8845,0.9164,2.8167425700322598e-05,6.851,69.3,True,True,33.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,12.747,2.2537,0.2308,1.3437251065819014e-06,-1.147,75.3,True,False,46.5,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,SAS,4.531,0.7393,0.0999,0.015533028229187772,2.64,107.2,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,12.567,2.9463,0.3324,0.0004199092888916487,-1.305,96.0,True,False,45.0,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,frameshift,SAS,18.799,2.6679,0.4564,1.4572973754093694e-06,2.208,,True,False,36.2,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,AMR,15.712,2.5209,0.3007,2.2087751648169156e-07,1.001,84.4,False,False,54.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,8.005,1.727,0.1507,0.06924386140727407,0.659,66.4,True,False,44.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,SAS,24.436,4.0828,0.6232,2.4445373357951466e-05,0.51,102.3,False,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,SAS,20.669,1.9769,0.5312,0.00010449469041762846,-0.175,77.0,True,False,49.2,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,16.97,3.4093,0.4698,0.0013466103361340948,1.646,98.2,False,,55.6,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,,AMR,33.015,5.6439,0.7278,2.1417022454028642e-05,1.965,73.3,True,False,38.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EAS,18.896,3.0145,0.5312,2.1951006608360078e-06,3.339,68.4,,True,31.0,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AFR,12.007,1.8894,0.1827,5.556070599754557e-06,-0.175,90.3,True,False,,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,frameshift,EUR,23.934,4.163,0.6081,0.0,4.072,74.4,True,True,32.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,4.194,0.7714,0.1125,0.0032730745384747816,1.973,88.5,False,False,63.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,17.535,2.9834,0.4862,0.0,,81.4,False,,39.9,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,,AFR,2.879,-0.0859,0.092,0.01576199381535791,5.197,66.4,False,False,,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,27.358,4.1369,0.6686,4.5404690143399664e-06,1.152,77.6,True,False,38.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,19.933,2.9586,0.5153,0.0,3.916,90.8,True,False,57.5,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,,22.758,4.0405,0.8126,0.0005335386150192399,0.45,105.0,True,False,36.3,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AFR,4.698,0.7116,0.1144,0.4803707045258805,-0.106,52.9,False,False,49.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,22.55,4.1775,0.5882,1.6463045639647684e-06,1.765,85.2,True,True,27.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EUR,15.223,2.3378,0.3858,7.445640149000118e-05,-0.113,86.6,False,False,41.5,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,25.008,3.8301,0.6708,2.1168773295616814e-06,4.829,61.2,True,False,46.6,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EUR,15.278,2.3929,0.4273,5.7301397720083605e-06,-1.034,70.0,False,False,37.6,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,3.533,0.3911,0.0679,0.0001307558307687697,1.252,83.8,False,True,,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,AMR,30.653,5.5072,0.8541,0.0,5.066,100.4,True,True,25.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,13.316,1.7375,0.3033,0.0008607883127825414,0.015,90.3,,False,38.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,6.946,0.8642,0.1615,0.0010818591493441615,,65.1,False,False,,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,13.42,1.9405,0.3597,,0.652,87.4,True,False,43.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,6.907,-0.1324,0.1527,0.03788842997601379,0.487,,False,False,31.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,22.334,3.8103,0.5415,1.8014775568719325e-06,0.905,93.5,False,False,46.5,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,15.317,2.4967,0.3821,0.006788937457440537,-2.218,58.4,True,False,54.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,,10.928,1.5319,0.2948,0.0007651081295604451,5.117,118.7,True,,46.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,30.106,4.5102,0.7289,7.815851105520146e-06,3.566,64.6,True,False,51.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,,3.4012,0.45,0.33095659490757373,-0.866,58.6,False,False,52.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,nonsense,,10.115,1.705,0.3787,0.012341752370908874,,93.5,False,False,40.6,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,25.791,4.1097,0.5261,0.0,3.451,68.8,True,False,42.8,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,EAS,11.057,1.8606,0.1073,0.0,3.704,82.9,True,True,30.9,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,,12.404,1.3574,0.2402,0.0004211986559241006,-0.666,88.3,False,False,57.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,5.526,0.6743,0.2145,0.00023275671672746045,3.124,76.4,False,False,67.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,20.584,2.2845,0.4746,1.810111456778586e-05,4.727,46.8,True,False,36.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,AMR,19.915,2.4445,0.6025,2.7625897954424854e-05,3.756,99.8,False,True,42.0,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AMR,9.064,0.965,0.1722,0.0004397466370598245,0.891,64.7,True,False,63.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,SAS,25.346,3.7831,0.723,2.6151910052679862e-05,-0.157,53.9,True,True,27.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,11.763,0.3713,0.1327,0.007869327672227774,5.207,69.8,True,True,29.2,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,,19.397,2.7556,0.4931,0.0,2.484,87.1,False,False,41.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EAS,10.156,3.1811,0.1935,3.282663138124004e-05,2.745,76.5,True,False,56.2,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,SAS,7.995,1.297,0.2772,0.15669275271656105,3.04,84.2,False,True,32.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,24.421,4.8532,0.6185,0.0,1.953,77.2,False,,40.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,5.719,0.8379,0.1809,0.057130152570886966,1.875,67.1,,False,52.9,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,14.919,2.4426,0.5107,0.005031595313105862,0.759,65.8,False,False,43.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,frameshift,AFR,15.069,2.2854,0.2845,,1.609,73.6,True,True,31.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,AMR,14.546,3.0926,0.424,0.00802150949222186,-0.807,82.5,True,False,42.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,,11.009,1.6312,0.2209,0.02181694198777845,3.579,74.5,False,True,52.2,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,missense,AMR,20.909,3.9427,0.4452,0.0,2.478,85.4,True,False,58.3,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,AMR,19.474,3.5256,0.5049,0.0,4.436,77.6,True,True,28.9,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AFR,8.176,1.3372,0.2597,0.0018668886000224479,2.409,87.4,True,False,64.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,35.949,6.246,0.9869,1.7657862643217982e-07,4.793,98.6,True,True,15.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,10.711,2.1312,0.1807,0.00022281085541476828,-0.553,56.8,False,False,50.8,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,AFR,31.524,4.0471,0.7859,0.0,3.435,76.4,True,False,43.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,,12.762,2.1885,0.4512,0.13025706353850489,-0.836,88.3,False,False,63.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,SAS,18.329,1.9721,0.4244,6.371772267161972e-06,3.964,58.6,False,True,58.6,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,SAS,32.403,5.8909,0.8934,0.0,4.947,51.3,False,,44.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,AFR,16.535,2.3451,0.3774,0.00032639398090274316,1.922,93.9,True,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,EAS,26.901,4.1241,0.7055,1.2031795184855353e-05,3.277,73.0,False,False,47.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EAS,6.177,0.664,0.1471,,0.431,83.6,False,True,35.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EUR,20.092,2.4143,0.4036,0.0,1.942,67.6,False,False,,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,16.596,1.6703,0.4484,0.0011765577848255548,0.332,64.5,True,False,32.8,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,15.739,3.5758,0.4694,0.006579578133614164,3.672,58.6,,False,,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,22.133,3.2695,0.495,0.0,0.667,77.6,True,False,50.4,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,25.184,3.8476,0.762,0.0,4.53,95.1,True,True,43.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,24.673,3.7096,0.6794,,,60.5,False,False,45.5,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,27.813,4.4762,0.5767,0.0009750666849132692,0.293,79.3,True,False,34.5,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AMR,34.159,5.3449,0.8638,1.6141690035959724e-06,4.762,69.3,False,,22.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,30.846,5.264,0.783,0.0006013204271681509,3.277,109.4,False,False,48.7,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,frameshift,SAS,31.586,5.2557,0.7535,0.0,,86.1,False,True,23.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,19.207,3.1962,0.488,0.0007020317521758149,3.397,83.1,True,True,41.2,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AFR,31.76,4.5238,0.8847,2.41569754124774e-07,4.4,74.9,False,False,44.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,EUR,20.439,3.4077,0.5143,0.0020427432608458272,1.623,82.4,True,False,50.8,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,,EUR,9.21,0.7519,0.2127,0.0010141242719630317,1.387,94.9,False,False,37.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,SAS,0.0,0.1075,0.0,0.0001615281527650509,,81.6,False,False,64.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,frameshift,EUR,4.558,0.1089,0.0354,0.06825617128214106,,93.5,True,False,55.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,22.373,3.2714,0.5368,1.8466141571722165e-05,3.676,63.4,,False,52.4,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,EUR,10.354,0.9824,0.3029,0.017723016034990793,-0.927,81.4,False,False,54.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,16.802,2.9529,0.4474,2.9071803554970027e-05,-0.831,77.8,True,False,48.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,frameshift,AFR,16.26,2.7359,0.343,7.229115191570632e-06,2.399,99.6,False,False,46.7,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,17.974,2.4533,0.4854,2.8066445133691174e-06,0.983,100.7,True,False,63.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,EUR,18.34,3.4461,0.4636,,1.588,89.7,True,False,50.2,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,nonsense,EUR,30.929,5.5479,0.7184,0.0,1.479,78.0,,True,36.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AMR,26.99,4.5164,0.5152,1.4379054238250933e-07,2.759,63.1,True,True,47.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,AMR,30.886,4.1103,0.6704,0.0,3.194,87.3,True,True,24.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,5.438,0.5682,0.1067,0.0031068376104685202,0.9,55.1,False,False,50.0,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,39.746,6.5242,1.0,,4.048,88.8,True,True,25.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,EUR,30.904,4.8557,0.7706,0.0,4.441,71.4,True,False,40.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,,11.234,1.6598,0.2693,0.00011731332203237496,2.377,108.6,False,True,36.0,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,AFR,2.698,-0.2833,0.0472,0.17895514499872053,,82.7,False,False,44.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,EUR,29.386,4.224,0.8598,0.0,4.002,88.6,True,False,41.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,22.193,3.0724,0.4507,0.0,4.453,70.8,False,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,,22.516,3.3358,0.6504,0.0,4.597,45.6,,True,44.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,frameshift,AMR,25.951,3.7325,0.7566,0.0,3.872,112.6,True,True,35.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,SAS,2.533,0.4174,0.0956,0.100897309398377,-0.925,77.5,False,False,72.4,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,18.479,2.9886,0.5344,1.6372980326967793e-06,2.337,62.8,False,True,38.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,nonsense,EUR,28.106,3.7714,0.5936,5.842627452564674e-05,3.111,62.5,True,False,35.9,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,missense,AMR,25.771,4.2424,0.6855,1.356191536515196e-05,1.684,71.1,False,False,33.6,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,6.544,2.095,0.1714,0.02843520983129629,0.653,81.5,False,False,64.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,nonsense,EUR,27.366,4.3967,0.6755,0.0,4.501,69.1,False,False,31.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,16.003,2.2937,0.4172,0.0003335143940984905,2.679,75.3,False,True,37.6,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,SAS,15.072,2.4419,0.2941,2.496427402055668e-05,,86.9,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,,13.641,2.4171,0.3365,0.21222731587512314,2.672,74.1,False,True,36.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EAS,4.022,0.0765,0.113,0.0008944663618686519,-1.872,64.7,False,False,50.7,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,6.481,1.3957,0.0468,0.3608251806035047,2.192,102.4,True,False,56.1,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,12.676,2.3075,0.439,0.00926134835380378,3.042,91.6,True,True,27.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,nonsense,EAS,24.984,3.8063,0.6322,,2.455,92.1,,True,27.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,6.615,0.8563,0.1801,0.07334647623918432,2.066,65.4,True,False,38.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,15.387,2.5607,0.3943,0.0,3.908,76.1,True,True,40.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,,23.56,4.3886,0.5644,0.0,3.888,107.7,True,True,37.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,EUR,17.867,2.4604,0.5751,0.003207182208315698,2.224,95.5,False,False,56.6,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,27.365,4.6033,0.5832,0.0,,68.9,True,True,36.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EUR,5.215,1.3647,0.1454,0.0008136139767839883,-2.365,64.3,False,False,57.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,21.747,2.5456,0.6471,0.00011108465140040972,2.811,97.4,False,False,42.6,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,12.456,2.1643,0.3272,0.00019680394443003603,0.342,94.1,False,True,,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,9.268,0.4892,0.2741,0.00033972332608902877,-4.177,82.0,True,False,68.4,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,11.211,2.0274,0.2703,0.09464978307842437,0.173,85.5,False,True,32.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,SAS,24.784,4.2572,0.5833,0.0,2.409,93.4,True,False,58.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,30.08,4.5701,0.7314,0.0,2.37,83.4,True,False,39.6,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,EUR,16.928,1.6927,0.4065,,2.972,79.2,True,False,45.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,AFR,8.554,1.3012,0.2367,0.00013880215450100627,0.438,72.0,False,False,49.7,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,,35.946,5.4006,0.9456,0.0,6.271,99.8,False,False,47.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,9.876,2.3175,0.3151,7.685805615070206e-05,2.963,66.7,False,True,35.2,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,5.347,1.868,0.1255,0.2793720366674178,1.748,71.3,False,True,36.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,20.731,4.3005,0.5758,0.0049135678391238604,1.149,90.8,True,True,35.1,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EUR,16.397,2.7772,0.3583,0.023569183086047885,-2.124,82.2,False,True,48.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,SAS,15.036,2.8883,0.3994,0.0,0.568,88.7,False,False,56.2,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,frameshift,AFR,37.09,6.0881,0.9753,3.6002984902949824e-05,2.341,62.9,True,True,21.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,AFR,12.101,2.4648,0.2884,0.0313645229351324,4.869,83.8,False,False,66.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,22.904,2.8874,0.5563,0.0004590753301541366,-0.3,73.0,False,False,40.9,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,nonsense,AFR,16.8,3.0553,0.4843,0.003537406117129465,4.913,58.8,True,False,51.2,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,EUR,19.207,3.1962,0.488,0.0007020317521758149,3.397,83.1,True,True,41.2,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EAS,7.786,1.7609,0.1447,0.0031203603930306475,0.916,63.5,False,True,49.9,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,frameshift,AFR,13.29,2.0023,0.425,0.0009768689131882204,2.702,67.9,False,False,45.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,AFR,23.941,3.9402,0.5779,9.565658048967943e-05,2.144,91.2,True,False,41.2,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,24.419,3.5813,0.7306,0.0,4.512,87.0,True,,32.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,EUR,29.384,4.3722,0.7448,5.1591429274706435e-06,6.605,80.0,,True,24.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AFR,13.94,1.754,0.2968,3.581803448087318e-05,4.004,106.7,False,True,43.6,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AFR,2.516,-0.3524,0.1996,0.027332516756413152,-0.415,70.6,True,True,50.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,14.171,1.5135,0.4061,5.21425886063493e-05,1.717,94.0,True,False,40.7,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,3.816,1.0079,0.1504,0.00046605039909901786,-0.593,,False,True,35.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,15.861,2.8428,0.4102,0.0,2.255,90.7,True,False,48.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,25.424,3.1105,0.6852,1.1302092767011514e-07,4.471,66.0,True,True,37.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,24.923,3.3149,0.6028,0.0017247558483439252,2.935,76.3,False,True,30.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,nonsense,EUR,27.013,4.2774,0.7508,0.0,7.101,83.5,True,True,33.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,20.332,3.2405,0.5875,0.0,1.99,88.2,True,False,38.4,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EUR,5.176,0.8367,0.345,0.04489860875162236,-3.913,78.4,False,False,50.7,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,6.061,0.755,0.1854,0.07182293839294525,-0.877,80.8,False,True,50.8,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,nonsense,AFR,38.94,6.2744,0.9827,2.446282220186725e-07,4.034,80.5,True,False,38.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,,EUR,20.713,3.6309,0.4182,0.000888426277648678,0.925,92.8,False,True,46.9,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AMR,15.922,1.9081,0.2364,0.0,0.066,73.4,True,False,56.4,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EAS,12.496,1.4925,0.3121,0.006269482985055674,0.607,84.4,False,False,41.4,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,EUR,21.263,2.9363,0.5684,0.0,5.261,80.9,True,False,40.2,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,AFR,,1.8741,0.3283,0.0051748316280964025,0.721,73.3,False,True,27.6,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,5.383,0.9158,0.093,0.012454095264191611,0.536,96.9,True,False,54.9,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EAS,27.708,3.9324,0.7617,0.0,4.982,62.3,True,True,37.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,12.981,1.5137,0.3015,0.0055767676389979455,1.752,88.8,False,False,41.2,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,,6.98,0.4879,0.2722,0.01215060097411053,-1.63,77.4,False,False,55.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,,32.485,5.9329,0.8296,0.0,3.566,113.5,True,False,45.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,24.26,2.6671,0.687,0.0,3.57,71.2,True,False,54.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,,10.939,1.682,0.2787,0.09360051358682098,1.735,91.9,True,False,48.7,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,5.168,0.6751,0.1312,0.0022536918781010124,1.68,103.8,False,False,53.8,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,12.919,1.1433,0.2833,0.001963748153887237,,78.1,True,False,63.6,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,SAS,23.793,4.0814,0.6431,0.00029033058807605367,1.477,86.7,True,False,39.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,23.919,3.5416,0.612,0.0004380252657207356,3.5,92.8,False,True,15.1,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EAS,7.384,1.3042,0.099,0.11127258250975958,-0.978,64.2,False,False,62.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,21.988,3.0658,0.5002,6.912569992299012e-06,6.183,69.5,True,True,21.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,2.579,0.8441,0.1264,0.0014368480999912673,,73.7,False,False,59.9,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,AMR,37.929,5.8083,0.8822,0.0,3.47,80.3,True,False,45.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,nonsense,AFR,29.653,5.0903,0.7688,0.0,5.253,67.1,True,True,42.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,8.556,1.5977,0.2703,0.003964529393129658,-0.304,67.0,True,True,35.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,,28.399,3.6851,0.688,0.0,5.412,92.9,True,True,36.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,SAS,9.622,1.143,0.3558,4.812809256664775e-06,0.45,73.2,,False,49.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,AMR,16.295,2.1356,0.3764,0.00018790699295099077,5.028,71.1,True,False,57.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,2.646,-0.133,0.0838,0.002031839984655931,1.492,66.0,True,True,49.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,,,28.748,5.0119,0.6927,0.0,7.141,96.9,False,True,25.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,10.272,2.0096,0.1313,0.0005805435879292297,-0.724,79.6,False,False,62.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,AMR,13.534,3.0578,0.339,0.003333410277074118,1.404,100.5,True,False,,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,24.484,4.3356,0.7165,0.007453599368595142,2.578,63.9,True,False,50.8,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,,4.197,0.3047,0.081,0.013148379878445162,-1.601,63.4,True,False,58.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,8.519,0.7449,0.1666,3.0608590574955204e-06,5.498,90.9,True,False,57.8,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,12.737,1.5741,0.2619,0.0,4.926,53.4,True,False,46.8,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,5.046,0.7909,0.0871,0.06973400072856983,0.553,93.2,False,False,55.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,,AMR,19.489,4.1437,0.4675,2.946318237209985e-06,3.514,76.8,True,True,27.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AFR,,3.4455,0.3539,0.00026010325134899725,3.778,99.0,False,False,39.4,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EAS,1.746,0.5691,0.0,0.0010343406807517856,-0.451,93.2,False,True,59.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EAS,21.567,3.1601,0.5886,0.0,3.288,66.5,True,True,25.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,0.277,-1.1978,0.0894,0.0005644101313174721,4.077,61.3,False,False,58.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,9.153,2.2934,0.2636,0.24480044620789476,-0.686,90.0,False,False,45.1,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,,1.8287,0.4299,0.00013168229469464644,1.42,68.3,False,False,47.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,,EUR,9.213,1.9515,0.1979,0.0007998369921953592,2.341,62.6,True,True,42.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AFR,10.866,1.2901,0.2839,0.00017243918938052657,-0.303,87.6,False,False,50.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,AMR,29.113,5.5733,0.7537,0.0,2.952,65.5,True,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,21.125,4.0249,0.4783,0.0,1.26,88.8,True,False,53.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,7.482,1.8354,0.1354,0.00042666554731914515,2.125,79.2,True,False,55.2,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,,AFR,22.666,3.8019,0.6714,0.0,3.403,72.7,True,True,32.2,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,EUR,6.384,1.6114,0.0992,0.026256754726249543,0.265,117.9,True,True,47.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,16.968,2.7306,0.5226,0.4584764341979074,1.896,,False,False,57.4,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,14.112,2.6637,0.3134,0.0035506781886430363,0.204,80.9,,False,50.1,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,SAS,19.395,3.9021,0.5272,0.0,1.632,66.1,True,True,47.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AFR,22.769,3.5221,0.5486,0.0,4.079,72.1,False,False,42.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,16.75,3.2875,0.4045,0.000191201294811754,2.917,66.3,True,True,17.4,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AFR,28.961,3.3493,0.8727,1.9075640995693426e-06,2.985,94.5,False,True,15.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,15.688,3.5999,0.3644,0.0,0.822,96.5,False,True,40.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AFR,5.267,0.5181,0.1534,0.005033613312441126,-0.869,110.1,True,True,38.3,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,nonsense,EUR,24.22,3.7803,0.5789,0.0,4.62,105.4,True,True,44.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,frameshift,,17.113,2.7521,0.4476,0.0,2.614,97.9,False,False,42.1,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AFR,12.206,1.4459,0.2656,0.23667222608627608,1.891,87.5,False,False,59.3,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,28.935,4.5721,0.6151,1.6346725018111166e-07,3.076,97.4,True,,43.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,11.924,1.9171,0.2295,0.2484542300381434,-1.117,73.7,False,False,40.9,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EAS,16.763,3.0849,0.4469,0.02324658380710617,1.241,76.4,False,True,29.4,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,AMR,16.544,2.1306,0.4804,2.8615289047534196e-06,2.215,70.5,True,False,46.2,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,,3.1804,0.1615,0.14536031550146544,-1.273,71.1,False,False,57.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,6.894,0.627,0.1382,0.12371347395063298,1.424,89.8,False,,50.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,SAS,38.134,6.3285,1.0,9.594813471330734e-06,6.657,87.2,True,True,20.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,7.924,1.0818,0.1915,0.007641569564049451,1.858,82.6,False,True,43.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,EUR,18.388,2.5908,0.3444,0.00018043115083440274,,66.5,False,True,40.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,27.543,4.4021,0.6661,6.220838631932621e-06,3.402,92.7,True,False,42.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,31.036,4.6133,0.7716,0.0,4.54,104.6,True,True,39.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,23.856,4.3334,0.7184,0.0,2.379,79.4,True,True,34.3,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AMR,26.253,4.2534,0.6699,3.014860636831572e-07,5.694,104.0,True,True,26.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,EUR,23.077,3.2992,0.5601,3.686116362004599e-06,4.376,79.7,True,False,45.9,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,16.617,2.293,0.3629,0.00046369142670743844,3.621,87.9,True,False,60.7,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,23.413,3.2211,0.5979,0.0,5.978,77.9,False,False,47.7,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AFR,19.221,2.9234,0.6855,0.00010902550614462679,2.291,75.6,True,False,48.6,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,nonsense,AFR,,1.216,0.0891,0.0017011517670073408,2.526,80.7,False,False,41.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,EAS,7.714,0.0852,0.1679,0.2904011593436503,,98.3,,False,63.7,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,4.089,0.3723,0.0,0.00019801070930426426,-1.558,66.0,True,True,58.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,EUR,20.101,4.5861,0.4783,0.0004304591142147902,1.572,71.5,False,True,41.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AMR,31.432,4.8914,0.7955,0.0,2.448,89.9,False,True,37.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,EUR,36.546,5.6187,0.9836,0.0,5.386,89.7,True,True,24.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,17.684,2.9437,0.32,0.0,4.587,74.3,False,False,50.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,14.064,2.4212,0.3921,0.0,5.907,89.3,True,False,46.3,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,EAS,30.535,4.4937,0.7441,0.0,4.522,103.2,True,True,24.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,20.67,1.8602,0.4966,0.0,3.401,92.1,True,False,55.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,21.818,3.7639,0.5183,1.2922867334831332e-05,5.115,66.0,True,True,29.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,26.064,4.228,0.7371,0.0,6.211,87.4,True,False,42.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,EUR,19.085,2.6549,0.444,0.0,2.87,52.0,False,False,38.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AMR,20.818,3.6478,0.488,0.005203560049906541,1.856,101.6,False,,52.4,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AMR,18.225,4.2505,0.3988,1.383906411720353e-06,2.653,63.5,True,True,15.5,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,frameshift,EUR,10.395,2.2622,0.3143,,0.473,88.0,False,True,51.2,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,11.664,1.6624,0.3511,0.0012756182792538929,-1.899,72.6,False,False,46.7,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,AMR,,2.3905,0.4268,0.0003863703765361586,1.855,,True,False,49.5,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,6.196,1.2826,0.1579,0.00014544069860245918,2.508,85.3,False,False,54.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EAS,23.31,3.3199,0.6314,0.0,4.9,78.7,True,False,36.3,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EUR,19.342,3.8613,0.3571,3.50851353165082e-05,4.726,64.9,True,True,35.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,6.244,0.0979,0.1216,0.001347299603674356,1.158,68.9,True,False,46.8,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EUR,21.752,3.2543,0.4902,6.967006163506488e-07,0.552,71.7,True,True,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,SAS,2.976,0.2101,0.1898,0.04764070911034285,0.303,104.0,False,False,59.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,nonsense,AMR,6.557,1.4489,0.098,0.00022308795932277407,1.996,92.8,False,False,47.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,EUR,21.67,3.6067,0.4518,0.0,,71.7,True,True,46.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,,1.9832,0.2873,0.0002030475424521949,2.911,86.8,True,False,47.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,nonsense,AFR,30.128,5.2068,0.7416,0.0,5.237,94.8,True,True,24.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,,15.378,2.1786,0.3536,0.4398456860397815,0.107,79.0,False,True,46.1,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,AMR,14.231,2.939,0.4959,0.0016728333195109625,-1.712,73.5,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,SAS,6.678,-0.2497,0.2392,0.000104312924039911,5.266,110.9,False,False,53.8,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,,EUR,12.066,2.202,0.2923,0.0035548985758245733,2.649,78.4,False,False,45.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,frameshift,EUR,23.439,3.7057,0.6362,0.0,5.003,76.3,True,True,25.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,AFR,3.405,1.8208,0.1012,0.0002898314674096138,-1.303,66.9,False,False,49.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,EUR,19.49,3.6885,0.3547,0.0,2.484,81.3,True,,44.6,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,nonsense,EUR,29.129,4.051,0.7474,,6.923,73.6,True,,38.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,AFR,31.854,5.7418,0.7706,1.8973491348586277e-06,2.348,69.7,,False,46.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,12.871,1.8105,0.5463,1.7517256328466987e-06,2.232,68.2,True,,55.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EAS,28.307,3.9115,0.7133,0.0,2.507,84.4,True,True,22.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,28.375,4.6564,0.6325,6.287327946558984e-06,7.342,75.1,True,False,34.7,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,,19.36,3.8489,0.3794,0.006098231646473896,2.872,81.3,True,True,36.8,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,AFR,,4.8957,0.6118,0.0,2.871,76.6,True,False,37.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,,17.408,2.3995,0.3097,0.0012451399012262724,3.726,87.2,True,True,37.2,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,AFR,31.28,4.8032,0.7229,0.0,4.145,89.8,True,True,29.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,22.835,4.1431,0.596,0.00015482275228386315,4.396,82.7,True,False,47.2,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,29.526,4.6024,0.7297,0.0,4.395,,True,True,32.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,SAS,5.312,0.8826,0.1104,0.007688352469648597,-0.983,89.5,False,True,45.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,AMR,20.937,2.9258,0.4791,8.313525459478544e-05,2.785,,True,True,40.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,4.953,0.7418,0.2138,0.04520085554100768,0.955,93.1,False,True,39.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,22.777,2.6158,0.4618,1.1518411617031636e-07,,86.7,False,,43.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,EUR,35.773,5.1136,0.9427,0.0,4.618,81.4,True,,21.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,3.913,1.9072,0.1426,0.00030453463029244434,2.832,86.6,False,False,49.2,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,EUR,19.754,3.8102,0.4157,0.0005807188326495407,0.356,63.2,False,False,44.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,0.98,-0.1979,0.0,,1.866,87.5,False,True,44.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,AFR,22.841,3.2204,0.5934,0.0,2.121,57.0,True,True,30.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,AMR,28.628,4.8846,0.6367,0.0,4.828,95.6,False,True,43.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,26.724,3.9948,0.5937,2.4107828200205412e-05,,85.0,False,,47.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,28.596,4.4143,0.6225,3.6211978500235044e-07,3.409,82.7,True,True,33.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,,5.7037,0.8395,0.0,-0.562,91.1,True,True,27.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,SAS,33.301,5.8762,0.8623,4.024172211062233e-06,3.096,83.2,True,True,26.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,25.536,4.1158,0.7384,0.0,4.051,76.5,True,True,32.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,EUR,23.184,4.5416,0.5661,0.0004775473838861549,3.479,67.2,False,True,30.6,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,AFR,38.289,5.2909,0.9407,0.0,5.138,,True,True,30.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AFR,19.435,2.5449,0.5905,4.608113649756501e-06,1.489,102.0,False,False,34.5,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EUR,23.467,3.2474,0.5829,0.0,7.274,86.9,True,True,41.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,4.193,1.3841,0.1492,,-1.25,71.1,False,False,,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,23.906,4.9398,0.5396,2.9734812597644108e-05,-0.669,86.0,True,,44.7,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,11.942,2.4172,0.3043,0.00012493092714598988,-2.233,94.0,,True,43.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,9.535,1.1232,0.2188,0.006133249120112129,4.342,92.9,True,False,57.0,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,SAS,9.484,1.1853,0.3287,0.004078942261179028,-2.273,,False,True,48.1,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,25.716,3.1801,0.6508,1.5987528631390403e-07,5.243,69.4,True,True,22.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,,7.035,0.47,0.1739,0.21469594957352892,-0.592,88.9,False,False,71.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,29.103,4.9467,0.6944,3.1780040203001204e-06,3.551,73.6,True,False,33.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,,EUR,24.649,4.4947,0.7502,1.583976071202147e-07,6.04,74.8,True,True,46.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,,AMR,,3.0612,0.569,1.0744759069328195e-07,2.237,,True,False,45.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EAS,8.257,0.7446,0.264,0.0003793491196133974,-0.61,120.8,True,False,51.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,23.385,3.4937,0.6009,0.0,3.569,61.4,True,False,50.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EUR,26.785,3.5422,0.6991,3.2084098760780718e-06,3.599,75.1,True,True,30.1,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EAS,12.783,2.1787,0.3471,0.01883009126020561,0.499,77.3,False,True,45.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,33.904,5.4528,0.8983,1.791608728820324e-05,3.085,63.2,True,False,42.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,,1.7044,0.2023,1.9114904193164508e-05,2.548,82.4,True,False,51.0,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,nonsense,EUR,20.334,2.3412,0.4614,0.00012361282140005848,-1.057,86.1,False,True,34.3,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,7.242,1.387,0.1355,0.2957130422342222,2.365,,False,False,59.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,,EUR,23.628,3.9887,0.6227,0.00020842822382107222,1.164,72.2,False,False,56.7,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,,AFR,21.878,3.4843,0.579,0.0005333284528556845,2.449,88.6,False,False,34.3,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,nonsense,EUR,10.928,1.246,0.2765,2.171422814137775e-06,1.373,54.1,True,True,44.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,,2.177,0.3827,0.31463745118523234,0.132,65.0,False,False,60.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,31.541,4.7233,0.7697,0.0,3.203,96.9,True,False,51.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,frameshift,AMR,25.375,4.7603,0.5451,0.0,3.607,50.3,True,False,46.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,18.77,3.5963,0.4757,1.670369502313425e-05,0.295,90.2,False,False,28.0,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,11.739,1.5131,0.2958,0.23274006945500011,2.216,68.5,,False,58.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,16.6,2.3334,0.3509,0.0,3.037,58.0,True,False,49.7,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,nonsense,AFR,30.092,5.1238,0.7567,0.0,1.125,88.5,False,False,44.3,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,frameshift,,28.947,5.8403,0.7385,3.7717980497772277e-06,3.714,67.4,False,False,44.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EAS,7.75,1.2961,0.0871,0.00014296911969944502,1.102,68.9,True,False,49.4,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,17.059,2.3774,0.379,0.0028362906116578424,0.681,89.0,False,True,22.0,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,AMR,8.657,1.5691,0.0717,2.511233345582387e-05,3.259,119.3,True,False,46.9,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,SAS,21.461,3.7959,0.5575,0.0,3.641,98.1,True,True,45.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AMR,38.882,6.8061,0.9145,0.0,3.895,87.3,True,False,40.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,17.305,2.444,0.5019,1.98646894501687e-06,3.66,86.4,True,True,30.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,,AMR,27.269,4.6889,0.8052,1.2518407986103263e-05,4.391,77.3,True,True,38.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,21.308,4.2352,0.4543,0.0,3.798,71.8,,False,59.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,,SAS,13.153,2.0073,0.3488,0.005903674409889484,4.118,87.6,False,True,44.2,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,19.394,3.4237,0.461,0.0,6.235,73.7,False,True,47.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,nonsense,AMR,36.388,6.0931,0.7997,2.788262565369641e-06,3.097,65.1,True,False,44.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,frameshift,EUR,23.828,3.6596,0.6558,0.0,1.76,88.5,True,False,51.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,20.488,3.9572,0.4889,0.0006251350809221221,0.591,80.4,False,False,38.6,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,1.785,0.9512,0.0293,0.025282522494848175,-0.903,61.8,False,False,47.4,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EAS,17.115,2.9074,0.4903,2.493010648039568e-06,-0.957,80.5,False,True,39.0,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,7.536,0.8318,0.2817,0.00044916280693706667,1.871,91.7,True,False,61.3,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,SAS,28.749,4.3026,0.5837,2.2822519136153412e-07,5.264,98.2,False,False,43.1,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,EUR,5.952,1.9328,0.0637,0.004778955846634539,2.155,64.1,True,False,38.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,AFR,22.219,3.6629,0.6235,0.0,3.043,97.4,True,True,33.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,1.885,0.3117,0.1461,0.396921600198027,1.474,81.9,False,True,60.4,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,missense,AMR,15.102,2.7582,0.5487,0.005090872907349378,1.718,57.6,True,True,44.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,26.365,4.482,0.6961,1.682800392368171e-06,3.167,93.0,True,False,48.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,AMR,0.741,0.7687,0.0,0.00019064674948255834,2.723,90.8,,False,68.0,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,18.876,2.8355,0.4963,3.85303867913547e-05,2.131,96.2,True,False,36.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,14.9,2.2803,0.2522,0.345094882291402,0.761,,False,True,37.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,AFR,20.602,3.3954,0.6682,0.0005191695801737468,5.264,87.7,False,False,40.1,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AMR,15.422,1.5564,0.3242,0.00046917611610746877,-1.591,110.3,False,False,55.1,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,18.766,1.9148,0.4869,0.00012428994969005015,-1.089,83.4,,False,37.0,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AMR,3.738,0.8723,0.1079,0.00032963560696445336,4.352,74.1,False,False,59.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,AMR,12.49,1.4332,0.3068,0.0002377914212899447,0.254,92.9,True,False,54.3,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,EUR,7.339,0.8432,0.1252,0.00011365308131009295,-2.304,72.2,True,False,50.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,9.692,1.2526,0.1491,0.01209217800403043,0.678,85.5,False,False,43.6,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,,2.874,0.6692,0.0242,0.018960485389455772,1.037,83.1,False,False,69.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,AMR,18.068,2.7741,0.5344,0.008224059204878849,-1.919,86.7,False,False,42.5,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,8.659,1.9491,0.2298,0.0027498890793771122,1.489,69.2,False,False,51.6,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,5.843,0.8319,0.184,0.12529528545850943,1.043,92.5,False,True,47.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,EUR,18.513,2.996,0.549,0.0,4.979,73.6,True,,43.8,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AFR,20.134,3.5613,0.5966,2.2072854391071313e-06,0.595,60.0,False,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,11.253,2.0762,0.3853,0.20847606572336147,3.834,73.7,False,True,38.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,15.662,3.2567,0.4129,0.02250532173582828,3.517,80.9,False,False,54.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,SAS,10.074,1.2392,0.3309,0.048552556189344814,-1.528,76.6,True,False,58.7,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,20.512,3.4247,0.5294,1.206834134262101e-07,6.554,84.5,True,False,51.3,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,nonsense,EUR,24.622,4.5001,0.644,3.654595788159692e-05,4.934,109.9,True,True,22.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AFR,8.549,0.7621,0.273,0.0001247538118333521,0.115,67.2,False,True,41.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,SAS,35.338,6.5765,0.8654,9.52712064252576e-06,1.883,89.2,True,,31.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,SAS,4.876,-0.2568,0.1648,0.07162658284403797,2.775,92.6,False,False,58.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,SAS,25.743,4.1753,0.596,0.0,3.303,85.9,True,True,27.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,EAS,28.251,4.5191,0.7764,1.0229365120973348e-06,3.327,98.1,True,False,21.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,9.445,1.4328,0.3166,0.002629441519713234,3.987,71.8,False,False,55.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,15.434,2.7703,0.3942,7.455576274208298e-06,3.691,84.0,False,,42.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,4.948,0.633,0.1793,0.024733600480875625,3.027,100.5,,True,54.1,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,7.414,1.8566,0.1479,0.0005977984043709106,-1.575,88.6,,False,63.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EAS,31.34,4.7335,0.8432,3.2845945641571242e-06,5.172,51.4,,False,42.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,AMR,24.441,4.2949,0.5882,0.0,4.088,80.0,True,False,39.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,EUR,25.13,4.1343,0.6676,2.0117999705565245e-05,5.662,84.1,True,False,39.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AFR,19.887,3.0782,0.5413,2.0831365785852306e-05,,79.1,False,False,55.0,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,nonsense,AMR,16.006,2.6385,0.4942,0.0,3.546,82.7,True,False,61.2,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,12.489,1.7792,0.3226,0.14341248727069514,5.782,59.5,False,False,52.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,SAS,32.47,5.2779,0.7822,3.8555133320964206e-07,2.697,69.8,True,False,40.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,29.069,4.2842,0.9011,8.43788330142181e-06,5.703,82.0,True,True,14.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,16.911,2.229,0.3558,0.006049582314789874,0.895,78.1,True,False,37.4,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,9.945,1.4977,0.1099,0.0042527579630274965,0.318,96.2,,False,45.3,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,14.189,1.9084,0.4232,0.008169582809725644,-0.915,91.5,True,True,37.3,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,EUR,,3.2351,0.7272,5.228587423166578e-06,2.028,112.2,True,False,46.0,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,EUR,22.104,3.6697,0.5138,0.0,4.921,75.1,True,True,39.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,18.748,3.9064,0.5006,4.1597845280888194e-05,3.48,94.8,True,True,45.5,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,frameshift,,17.737,3.2576,0.4866,7.983447987851715e-06,2.453,97.1,True,True,41.0,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,nonsense,AMR,20.59,4.378,0.4524,8.185589406616637e-05,3.543,81.9,False,True,37.6,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AMR,27.655,5.0625,0.707,0.0,4.445,49.6,True,True,44.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,19.256,3.0233,0.5035,0.0004814924984739097,2.367,101.7,False,False,55.4,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,12.771,1.9698,0.3353,0.0,5.054,81.9,False,False,46.3,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,36.047,5.5982,0.9101,1.0039102977524741e-05,7.792,88.6,True,False,30.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,23.654,4.3457,0.6551,1.930612105347418e-05,2.46,112.7,True,False,37.4,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,24.24,3.7015,0.5879,0.0,7.997,79.8,True,True,34.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,11.062,1.5677,0.3627,0.0,0.883,74.4,True,False,42.5,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,38.14,5.7283,0.8537,0.0,2.698,73.7,True,True,23.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,nonsense,EAS,6.003,0.4953,0.138,0.016394863453856087,1.574,70.5,False,False,50.7,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,21.734,4.306,0.4924,2.0440027327221496e-07,3.824,56.0,True,True,40.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,nonsense,EUR,10.787,0.9076,0.2171,0.0032353067897087323,1.673,74.2,False,False,70.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,SAS,14.081,2.3168,0.49,0.005510352960013378,-2.754,86.7,True,False,45.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,,EAS,3.59,-0.8089,0.0898,0.0001125794769917393,-0.91,96.2,False,False,51.3,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EUR,27.533,4.6068,0.6808,6.660701700904307e-05,2.881,61.2,True,,44.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,,28.426,4.7336,0.727,0.0,,86.8,True,True,44.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,EUR,26.758,4.1495,0.5922,2.1607679643236155e-05,3.442,46.2,True,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,nonsense,AFR,28.497,3.7275,0.6859,0.0,7.266,89.7,True,False,61.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,9.185,0.7596,0.1665,0.00023750461753444603,1.699,99.2,False,False,50.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,20.364,3.3433,0.4699,2.058733843879765e-05,0.057,118.5,False,,45.5,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,7.658,0.5616,0.1318,0.001052470030588168,-0.536,,False,False,38.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,SAS,25.103,3.8732,0.6174,1.9978791236290613e-05,5.241,49.4,True,False,19.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,20.204,2.4379,0.4117,0.0,-0.599,91.4,True,False,57.6,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EAS,14.49,1.7316,0.4108,0.00409982509023192,0.073,71.1,False,False,49.2,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,nonsense,EUR,34.335,4.9895,0.7843,0.0,4.51,68.4,True,True,44.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,AFR,23.345,4.1927,0.5062,0.0,3.244,77.5,False,True,14.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,17.349,2.2925,0.3906,0.0008638509914094314,0.116,68.5,,True,20.9,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,SAS,15.038,2.4077,0.2725,0.00010743406198256815,,,True,True,24.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AMR,9.8,0.7244,0.3332,0.470422978238917,0.349,76.5,False,True,55.8,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,3.374,-0.56,0.1363,0.017527225839254975,2.656,84.8,False,False,60.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EAS,19.684,4.3569,0.4879,8.445846726212529e-06,4.188,102.5,True,True,37.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,20.087,3.2134,0.5027,0.00010967592683170934,-1.326,77.2,True,,56.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,,10.598,1.7214,0.4135,0.4482967993516092,2.124,81.1,False,False,53.8,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,,18.619,3.0885,0.4882,5.771053089628984e-05,3.641,90.1,False,False,40.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,,EUR,16.454,3.458,0.4589,0.026365420070390555,4.054,105.8,False,False,36.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,SAS,27.969,4.2997,0.644,9.932351554996453e-05,2.69,70.6,True,True,42.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,14.676,3.6795,0.3905,0.0007367392885884555,-2.157,,False,False,60.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,AMR,30.076,5.2582,0.7457,2.1350281525857484e-05,4.347,76.3,False,False,57.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AFR,4.977,1.1277,0.181,0.24538142229135723,,79.2,False,False,57.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AMR,8.084,1.382,0.1496,0.00035063167022820357,1.396,83.9,False,True,43.7,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,6.845,1.1971,0.1836,0.0003468357825303193,0.45,73.7,False,True,49.7,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,EUR,20.471,2.8781,0.5064,0.0004895081105955526,2.148,77.5,True,False,61.8,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,frameshift,AFR,23.442,3.7689,0.5656,6.271668779717911e-06,3.373,85.1,True,True,29.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,8.125,2.0935,0.2278,0.01285156256061771,1.614,90.8,False,False,43.7,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,EUR,27.0,4.2906,0.4727,0.0,7.467,95.4,False,False,32.0,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EUR,29.893,6.137,0.9524,0.0,3.402,80.4,True,True,27.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,15.917,2.8175,0.4421,0.0,1.276,53.3,False,False,51.2,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AFR,23.324,3.7586,0.6281,0.00013158307392199911,1.974,73.5,True,,41.9,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AFR,25.383,3.8242,0.6204,2.145702995477708e-06,4.951,89.8,True,True,31.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,10.686,2.2275,0.1771,0.0001385092263314953,0.045,66.5,False,False,51.9,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,21.223,3.1081,0.594,0.00022855206021934167,0.639,93.6,False,True,38.6,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AMR,5.569,1.1768,0.2387,0.0007566554356361135,1.303,77.2,False,True,45.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,EUR,6.027,1.5195,0.2851,0.02312788434987332,0.899,73.6,True,False,67.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,23.096,3.5296,0.5994,2.5251126089484847e-05,3.201,86.8,True,True,35.5,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,AMR,0.0,0.1477,0.0413,0.06502867365507256,0.934,88.6,False,False,51.0,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,35.902,5.8376,0.9489,4.4828891583161824e-05,4.706,90.3,True,True,10.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,14.476,3.4398,0.2132,4.9125901447891716e-05,1.831,90.0,True,True,26.3,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,nonsense,SAS,34.171,5.7051,0.8603,1.03918606631999e-07,2.406,84.2,True,True,22.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,10.607,1.9564,0.265,0.0002149869979103734,0.247,93.4,True,False,41.3,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,10.871,0.3456,0.3136,0.027802711433109573,0.946,72.0,True,False,35.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,20.791,3.6601,0.491,7.578196393255559e-05,1.84,87.0,False,False,41.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,AMR,31.718,5.2148,0.8192,1.6242843085956213e-05,3.878,82.0,True,True,25.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,34.99,5.7832,0.9118,9.726869947604771e-05,3.632,79.2,True,False,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,7.526,2.3107,0.0494,0.011663132250898444,-1.414,83.2,False,False,56.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,nonsense,SAS,35.958,5.5105,0.8912,0.0,5.206,59.8,False,True,29.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,,14.088,2.4282,0.4333,6.799461270651946e-05,2.713,86.1,,True,44.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,AMR,25.027,3.4198,0.6926,1.4609468044250329e-06,3.423,93.4,False,True,21.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,30.415,5.718,0.7448,0.0,6.269,97.7,True,False,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,7.84,0.9902,0.1413,0.00021054195877864373,-0.032,90.4,False,False,,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,,15.99,2.3945,0.4616,1.3750222137751973e-05,1.989,77.4,False,True,46.1,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,35.908,5.6115,0.857,1.1705274475306469e-06,1.389,91.1,True,True,16.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,12.082,0.9008,0.2108,0.3234999723890197,-2.075,77.1,False,False,44.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,frameshift,EUR,4.264,0.0541,0.1272,0.018152676631343654,1.452,,False,True,47.9,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,,6.731,1.8443,0.2427,0.0005792667489607003,-0.145,100.6,False,False,51.0,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,SAS,32.258,4.9014,0.8831,8.670497556280204e-07,4.195,92.6,True,,10.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,9.292,2.013,0.1036,0.014292531115062181,0.417,90.2,False,False,46.7,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,27.178,4.2276,0.5687,3.236065638325593e-07,4.8,95.4,True,True,19.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,,27.295,4.1554,0.8667,0.0,4.419,78.6,False,True,26.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,3.158,0.5985,0.078,0.39217953823190677,1.843,58.3,False,False,48.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,,19.173,2.8077,0.4918,0.00018862607551042615,2.274,107.4,True,True,37.9,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,8.39,1.6092,0.2554,0.00624873484590129,2.899,112.6,,False,56.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,24.842,4.3733,0.6543,0.0,-0.121,77.9,True,True,32.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,11.588,2.7445,0.143,0.035187460959978725,3.651,,,,49.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AMR,18.464,1.4764,0.3598,2.5106001119885754e-06,0.888,75.0,,False,40.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,30.315,5.1221,0.6503,0.0,3.028,63.7,True,True,32.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,AMR,29.288,4.0787,0.6704,3.789959535378773e-05,5.45,81.2,True,False,37.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,4.297,0.7538,0.1311,0.08920918305491764,0.588,41.1,False,False,51.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AFR,20.899,3.7848,0.4554,0.0,5.028,70.7,False,False,41.6,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,frameshift,EUR,27.455,4.4398,0.7139,0.0,2.8,66.3,True,True,23.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,frameshift,EUR,11.229,0.8488,0.254,,4.829,92.8,False,False,60.4,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,frameshift,EUR,18.404,2.9614,0.5205,1.7939295580172688e-06,2.493,108.8,True,False,51.4,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AMR,3.277,0.0661,0.0286,0.0005291858785705685,-1.179,88.6,False,False,59.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,frameshift,AFR,19.068,3.5941,0.398,0.007238626435298271,2.812,88.3,True,False,47.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,nonsense,EUR,18.534,2.1544,0.5217,0.0,4.018,69.5,True,False,51.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,,2.8888,0.525,2.6791558268460438e-06,,77.4,False,False,40.0,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,AFR,15.13,2.786,0.3224,1.3353722899198055e-06,3.874,57.3,True,False,46.7,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,SAS,6.765,1.8929,0.1585,,2.256,68.6,True,True,40.1,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EAS,12.594,2.7876,0.3375,1.1681104141571153e-06,1.827,83.8,False,True,38.7,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,SAS,17.14,2.3532,0.526,,-1.37,72.3,False,False,44.2,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AMR,12.989,2.1633,0.2938,0.4381542736250942,-0.753,111.9,,True,38.2,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,missense,SAS,33.141,5.0216,0.7341,6.864879246130445e-05,3.962,78.9,False,False,43.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,21.915,4.4968,0.6266,0.00039030869556508564,3.869,68.6,False,False,44.9,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,nonsense,EUR,7.701,1.3289,0.1413,0.23002280496301947,-1.328,79.5,True,True,49.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,19.292,2.9754,0.5096,1.4540597051681225e-05,-1.964,99.7,True,False,54.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EUR,25.81,4.263,0.6784,,5.553,84.5,True,False,35.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,0.0,1.6933,0.0316,0.025723787642612676,0.696,83.4,False,True,49.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,13.645,2.6978,0.3731,0.01873671825722653,1.6,75.0,False,False,59.0,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,AMR,8.455,0.8058,0.2584,0.0,0.46,67.6,False,False,48.8,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,frameshift,EAS,28.511,3.8419,0.6634,0.0,0.277,103.1,True,False,43.2,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EUR,5.357,0.3454,0.0872,0.027177495055546202,1.573,88.2,False,False,50.3,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,SAS,14.631,1.5955,0.3549,0.0012626408720045961,1.268,74.4,True,False,56.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,4.314,-0.564,0.1042,0.0013204496488663938,2.046,85.3,False,False,59.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,EAS,30.859,3.969,0.6831,0.0,8.176,100.4,True,False,47.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,12.688,2.6787,0.226,0.12065813626071897,3.283,67.8,False,False,37.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,EUR,7.052,1.0537,0.0105,0.008903758037656109,2.628,83.2,False,True,52.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,EAS,24.602,3.9504,0.5333,,6.272,56.3,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,,AMR,9.37,1.0413,0.2278,0.0003829824669087999,1.088,106.9,,True,44.4,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,,AFR,3.993,1.7346,0.2695,0.12580895808366788,0.18,59.5,True,,62.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,22.273,2.3314,0.6346,2.649603169477058e-06,1.527,71.4,True,True,35.8,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,EUR,29.297,4.981,0.7035,0.0,2.247,70.8,True,False,43.1,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,21.141,3.7431,0.502,7.791051482859197e-06,,78.4,,True,29.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,AMR,22.392,4.3571,0.6017,5.924420937091264e-05,4.457,64.5,False,True,36.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,AMR,31.133,4.7183,0.7088,3.1213776677988635e-07,4.436,70.1,True,False,32.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,nonsense,AMR,18.456,2.5913,0.5396,0.00020765994039626976,1.259,64.0,True,False,53.8,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AMR,22.772,2.9578,0.4758,7.80551302528488e-06,1.947,69.2,True,True,24.9,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,nonsense,AMR,,0.7261,0.3869,0.4554144723810481,-2.156,81.8,False,False,51.7,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,38.036,5.8462,1.0,0.0,,74.7,False,True,26.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,30.266,4.3169,0.8237,0.0,2.818,72.6,True,True,22.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,5.708,0.4936,0.2446,,0.192,88.8,False,False,62.6,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,SAS,27.738,4.6914,0.6767,1.7692937020209016e-05,3.654,69.3,True,True,30.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AFR,27.691,4.7259,0.7278,0.0,2.79,67.8,False,False,38.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,EAS,10.36,1.35,0.3106,0.021180881922413856,2.636,86.2,True,,57.2,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,7.643,1.3063,0.1056,0.0021075942079977236,-1.161,78.5,False,False,41.5,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,AMR,10.776,2.1535,0.294,0.07847130579073094,3.007,87.8,False,False,40.0,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,nonsense,AMR,6.652,1.5626,0.1539,0.0022517033915961443,1.365,88.9,False,False,57.0,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,28.005,4.4256,0.7993,0.0,3.444,54.7,,False,34.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EUR,26.167,5.3292,0.5767,0.0,3.007,114.2,False,True,34.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,25.864,3.5851,0.6867,0.0,6.152,51.8,True,,32.9,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,,22.257,4.7044,0.595,0.0,2.084,70.3,True,True,39.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,SAS,40.0,6.3459,0.974,2.3758976869347578e-07,5.105,97.5,True,,28.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,36.576,5.8641,0.9052,5.239591821090608e-07,7.567,105.2,True,False,29.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,16.124,2.8944,0.3912,0.0,-0.984,43.8,False,,50.1,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,EUR,,4.7184,0.7015,0.0,5.754,89.0,True,True,20.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,26.585,4.3429,0.6835,7.537404821157836e-07,7.43,71.1,True,False,41.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,SAS,20.354,2.7035,0.5227,0.0006622271009997903,2.878,86.2,True,False,46.4,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AFR,23.808,4.1432,0.4264,0.002842693630496952,-1.369,69.3,True,False,36.3,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,18.859,3.1575,0.3554,0.00010411686825468805,-1.143,,False,True,40.3,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AMR,36.944,5.694,0.9957,2.0752187410891635e-06,4.334,78.2,True,False,49.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EUR,19.385,2.1776,0.5115,3.5581963445927866e-05,0.111,78.3,False,True,31.3,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,EUR,15.407,3.1606,0.4241,0.0003329409046483363,2.56,44.5,False,True,39.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,,AMR,,4.153,0.9267,8.541538121130864e-05,5.756,78.3,True,True,30.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,SAS,33.098,5.3699,0.9001,4.929871651108074e-07,0.777,,True,False,51.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EAS,22.285,2.5903,0.5337,0.00010240890484012176,4.846,88.0,False,False,51.3,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,EUR,22.252,2.5132,0.5072,0.0,2.726,86.8,True,True,35.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,AMR,23.464,3.348,0.5663,0.0,3.084,103.4,False,False,38.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EAS,35.035,5.6079,0.8965,1.3199762143886579e-05,5.198,68.9,False,True,39.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,4.443,0.6585,0.243,0.23967149311497685,0.414,65.0,True,False,64.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,19.414,3.1754,0.4704,1.217101873103206e-06,-0.715,76.2,False,False,54.4,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,,EUR,0.0,0.7507,0.0633,0.023390135936811295,2.009,64.3,False,False,57.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,13.241,2.4455,0.4629,0.0032786293266461024,-0.695,81.2,True,True,43.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,AMR,25.238,4.5969,0.5836,3.571824011483932e-05,2.126,75.3,True,False,47.5,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,10.769,2.5734,0.1701,0.0011398796809776691,0.359,79.9,False,True,37.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,EUR,31.262,5.6,0.7421,5.386145275405922e-07,3.195,65.9,True,False,28.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,32.563,5.8539,0.8189,0.0,7.435,117.1,True,True,29.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,21.458,3.1976,0.5049,1.6062167554215768e-06,3.336,110.6,False,False,46.7,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,frameshift,AMR,13.986,1.6615,0.3924,0.00021827787310732048,2.198,84.0,True,False,41.9,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,,EUR,13.063,1.4379,0.1786,0.00029016778923439775,1.636,95.4,True,False,45.3,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,16.695,3.2751,0.5275,0.0059430475722320585,2.782,55.5,False,False,54.4,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,frameshift,SAS,27.659,4.219,0.5964,1.0375961447576143e-05,3.143,60.1,,True,20.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,25.978,3.4627,0.54,0.0,2.403,90.3,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,7.587,-0.4499,0.0827,0.00017292702879021928,-0.397,69.7,False,,42.8,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,17.236,2.7128,0.3596,6.142669378987995e-07,,78.5,True,True,55.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EUR,22.728,3.8426,0.4873,0.0012560962778486405,1.775,68.6,False,False,49.7,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,13.021,1.6788,0.4154,0.14908155632753844,-0.991,44.2,False,False,50.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,,3.478,0.5055,0.0,4.848,90.5,True,True,36.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,nonsense,AMR,6.327,1.9997,0.1046,0.20038465049978066,-0.491,98.8,False,True,47.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,40.0,5.1818,1.0,4.911582264895537e-06,6.864,107.5,False,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,35.404,6.654,0.8356,2.166820112006737e-07,4.747,90.7,False,True,27.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,,4.905,1.0559,0.146,0.0002446846586294931,-0.475,61.7,False,True,44.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,EUR,20.18,3.3601,0.4619,1.5902318084102632e-06,2.687,97.0,False,True,30.6,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,28.824,4.2881,0.8306,3.2880055877480103e-06,7.343,80.0,False,False,32.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EAS,14.401,1.9905,0.3246,0.00032648586019803525,4.027,43.8,True,False,52.5,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,nonsense,,21.882,4.2082,0.6213,2.5420001669993536e-06,4.2,84.8,True,False,41.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,SAS,28.749,4.3026,0.5837,2.2822519136153412e-07,5.264,98.2,False,False,43.1,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,nonsense,AMR,31.768,5.3516,0.8223,0.0,0.899,84.3,True,True,43.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,,12.145,2.9931,0.2475,0.005010995722778649,2.796,102.0,False,False,55.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,,12.335,2.4683,0.298,2.2519742030366807e-06,1.089,62.5,True,False,49.8,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,nonsense,AFR,29.394,4.2192,0.8105,1.3081794153032868e-07,1.789,78.4,True,False,34.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,,3.994,1.4809,0.0862,,0.835,79.9,False,True,43.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,frameshift,AMR,,4.0936,0.6284,0.0,4.25,57.9,,True,36.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,EUR,22.531,4.5456,0.539,0.00016812875935750187,4.304,95.5,False,False,38.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,EUR,13.896,2.5845,0.267,0.008057524604480499,-0.695,61.7,True,True,39.3,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,missense,EUR,17.148,2.3832,0.5343,0.0003148616181767085,1.567,94.3,False,True,,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,SAS,10.383,1.8378,0.1964,0.0003197037610924065,2.828,68.1,False,False,50.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,,AMR,19.658,3.1528,0.4499,6.672265979133758e-06,1.609,52.9,False,True,31.1,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,36.163,4.8659,1.0,1.2494755422403302e-06,1.458,76.6,True,True,16.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AFR,9.367,1.442,0.2755,0.0055593645011561,3.453,69.8,False,False,58.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,,14.575,2.3777,0.3115,1.7832334661941918e-05,4.653,83.1,False,False,64.5,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,7.653,0.339,0.1873,0.3621416977075139,-0.888,70.6,False,,37.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,nonsense,,7.602,0.4799,0.2687,0.028098724539698843,-0.86,65.2,True,False,65.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,nonsense,EAS,27.277,3.8689,0.7073,0.0,3.167,58.8,True,False,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,10.725,2.0238,0.1468,4.698361296039071e-06,4.375,73.6,True,True,41.8,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,17.335,3.5389,0.3346,0.0019024657006534486,1.607,87.8,False,True,32.6,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,15.156,1.8948,0.2984,1.3911815584565039e-05,0.332,85.5,True,False,39.9,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,26.474,3.8803,0.7762,6.66968090536553e-06,4.04,79.9,False,False,43.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EUR,40.0,7.2979,0.804,0.0,2.586,87.4,True,False,39.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EAS,,4.0158,0.6277,0.0,6.633,121.6,True,False,45.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,21.458,3.1976,0.5049,1.6062167554215768e-06,3.336,110.6,False,False,46.7,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,frameshift,EUR,17.507,2.9202,0.4253,0.0002556935223948925,1.458,99.6,False,True,25.0,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EAS,23.465,3.9986,0.659,1.409311052396472e-05,4.362,64.7,True,False,43.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EAS,0.0,-0.8275,0.0698,0.15294009256978283,-1.09,82.5,False,True,48.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,frameshift,EUR,8.56,-0.0917,0.2134,0.00532792929382857,0.155,56.9,False,True,42.0,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,EUR,17.867,4.4317,0.5798,0.0021781024200142655,6.295,78.4,False,False,31.2,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,31.734,5.6515,0.8501,0.0,5.606,,True,False,36.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,23.197,3.8421,0.568,0.00010688368225241297,1.719,,True,False,43.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,8.442,1.7331,0.1499,0.038465562134992005,-3.61,83.4,True,False,51.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,6.537,1.3785,0.2535,0.15537899029284705,2.738,54.7,False,True,45.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,AFR,3.375,0.1855,0.1487,0.009270973710284281,2.926,119.6,False,False,69.6,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,5.35,0.1779,0.064,0.15472238118168524,0.232,74.2,False,True,48.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EAS,24.593,4.0367,0.5889,1.0525782196257877e-05,4.777,102.2,False,True,33.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,30.057,5.1517,0.7877,0.0,4.601,,True,False,46.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,5.802,0.1666,0.0505,0.103918177608769,-0.162,79.0,False,False,,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,8.706,1.8063,0.1482,0.1052024562133829,2.668,112.0,False,False,50.1,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,SAS,7.014,1.575,0.0671,0.008285133224225742,2.128,91.6,False,True,48.5,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,EAS,,2.8551,0.4854,1.6413024731765515e-05,2.212,67.5,False,True,39.1,Homo_sapiens,GRCh38,VUS,cerebelar
+PSEN1,frameshift,AMR,17.009,2.3681,0.4001,0.0,1.303,85.4,True,False,45.9,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,26.966,3.8947,0.8064,0.0006763452871393542,0.349,51.4,False,False,51.1,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,24.411,3.9328,0.5517,6.050146587618607e-06,4.61,63.0,True,,45.1,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,8.439,1.9932,0.1207,0.003994975110936254,0.105,98.6,False,False,48.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,28.835,5.3428,0.7801,1.4425708395475237e-06,1.893,76.4,True,True,25.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,7.013,1.0901,0.1752,0.000445664896660433,0.606,61.5,False,True,51.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,AMR,6.492,1.6211,0.2526,0.10239201734828246,3.325,58.4,False,True,45.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,25.135,4.4626,0.6243,0.0,5.192,94.6,False,False,38.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EUR,12.824,1.156,0.189,0.05745836582730959,-3.01,63.3,False,False,54.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,13.757,2.1129,0.2884,0.0012365809810469459,-0.229,95.4,True,True,36.3,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,SAS,15.2,2.3259,0.4554,0.0006675003076056604,4.265,67.0,False,False,29.5,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,,2.9167,0.3147,0.02968183409190981,0.544,61.4,True,False,43.6,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,AFR,11.249,2.0466,0.1679,0.0002773734887096419,-0.318,54.0,False,False,61.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,nonsense,AFR,27.172,3.9154,0.6791,0.0,4.982,91.7,True,True,34.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,AMR,31.796,4.2942,0.8353,0.0,5.958,98.9,True,True,27.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,,21.54,2.5042,0.4539,0.0,,83.4,False,False,40.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,frameshift,EUR,22.428,3.8387,0.4129,0.0,4.556,86.9,True,True,39.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,8.405,1.647,0.2301,0.0014004532823135199,-0.185,102.1,False,False,56.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,9.937,1.9768,0.3996,0.031580725904496225,0.409,80.2,False,True,37.9,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,EUR,8.449,1.4339,0.2482,0.03711260393925997,-1.807,79.9,False,True,33.2,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EAS,39.812,5.856,0.9997,0.0,3.209,63.1,False,True,30.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,1.664,-0.1192,0.0849,0.00023840947316004684,2.426,84.9,False,True,61.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,nonsense,AFR,23.286,2.2505,0.4713,2.4011937043599983e-06,2.199,95.1,True,,27.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,5.079,-0.4674,0.1121,0.007520415755458214,,103.2,False,,48.4,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,30.035,4.3498,0.6678,4.954513975925886e-06,5.241,63.5,True,True,26.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,EAS,8.057,1.0217,0.2299,0.012114914001401042,-3.124,82.6,False,False,48.1,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AFR,10.014,2.8633,0.1789,0.0026016384319218996,0.851,57.7,False,,51.6,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,27.114,4.1122,0.5533,1.152747373337629e-06,2.805,70.4,True,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+LRRK2,missense,EUR,15.485,2.7294,0.4647,0.008615974556157677,1.641,78.8,,True,35.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,40.0,6.6947,0.9569,1.1396298595753165e-06,3.988,86.9,True,False,30.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EAS,9.481,0.7213,0.2473,0.0028875470260159865,2.628,74.9,False,False,47.1,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AFR,25.717,3.3003,0.6207,5.504349191805352e-07,4.322,49.9,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,6.894,0.1118,0.2269,0.00010488575894633061,4.079,92.3,False,True,45.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,SAS,12.09,1.5266,0.2178,9.52790940459333e-06,2.135,96.8,False,False,28.4,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EAS,19.369,3.0697,0.397,0.0,4.525,79.1,True,,35.6,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,,,3.4972,0.5411,0.0012059432042298695,-0.527,63.7,False,,40.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AMR,14.467,2.9051,0.3126,6.116797409743007e-05,-0.328,66.1,False,True,38.6,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,0.0,0.1909,0.0,0.009986221519777471,2.288,66.4,False,False,70.9,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EUR,16.129,2.7346,0.4617,0.3307623764079141,1.212,96.1,False,True,47.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,missense,EUR,24.411,3.9328,0.5517,6.050146587618607e-06,4.61,63.0,True,,45.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,missense,EUR,27.152,3.5103,0.6608,1.5672711857967702e-05,4.098,86.1,False,False,41.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,,13.307,2.4271,0.4856,2.483300573645011e-06,3.965,67.4,True,True,39.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,AMR,31.719,5.6808,0.7348,2.671291037179326e-06,7.896,83.5,True,False,24.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,SAS,7.639,0.9046,0.3143,0.00039564569096840177,0.107,88.9,True,True,37.3,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,21.761,3.9587,0.5628,0.0,3.824,73.1,True,True,33.4,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,AFR,13.445,2.4041,0.2788,0.0,2.08,62.5,False,,49.0,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,18.961,4.1669,0.4717,0.0,-0.214,54.4,False,False,35.2,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,21.533,3.6369,0.5143,0.0010530553009752502,3.355,70.3,False,False,45.0,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EUR,23.763,2.5078,0.5857,0.0,6.257,45.4,True,False,56.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,16.621,1.8436,0.3951,0.020017869646092444,,97.1,False,False,48.0,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,14.161,2.6384,0.4051,0.005416355808936082,3.456,87.8,True,False,41.1,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,AFR,0.0,-0.5126,0.0,0.003021117741862587,0.199,89.0,False,False,62.4,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AFR,9.628,1.1045,0.1613,0.00015779844357667537,2.706,64.8,False,True,48.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,16.488,2.3123,0.4471,0.00496967782596984,3.266,76.5,True,False,51.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,AMR,17.892,3.8402,0.4411,4.673631041352145e-06,3.291,86.9,True,False,58.3,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,EUR,10.414,1.9912,0.2404,0.0004514896824436022,2.553,89.0,True,False,63.8,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,14.564,2.196,0.3567,0.0,0.712,79.5,False,False,43.2,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,nonsense,EUR,9.72,2.5797,0.2714,0.001016319886577766,,83.1,True,False,66.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,25.931,3.1406,0.6944,0.003641603498930536,2.118,63.3,True,True,29.9,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,nonsense,EUR,27.323,3.9628,0.6593,2.7930246070405193e-06,5.249,78.0,True,False,41.9,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,EUR,26.947,4.2378,0.5254,7.156600846841201e-06,4.936,96.9,,True,22.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,34.321,5.3734,0.7873,0.0,5.01,66.6,False,False,58.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AFR,29.436,4.6349,0.8355,7.497674317964655e-07,3.496,88.4,True,True,35.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,AMR,22.392,4.3571,0.6017,5.924420937091264e-05,4.457,64.5,False,True,36.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,11.211,2.0274,0.2703,0.09464978307842437,0.173,85.5,False,True,32.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,EUR,29.745,5.1378,0.7133,1.8414287008677414e-06,2.691,85.3,True,False,40.8,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,AMR,21.932,3.6122,0.4421,0.0,5.984,80.4,True,False,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,,,3.5951,0.4829,2.276845064635218e-05,3.45,108.0,False,False,47.1,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,frameshift,AMR,15.797,1.531,0.3564,4.372308927198568e-05,1.657,79.0,True,True,30.7,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,SAS,27.584,4.4639,0.6837,0.0,2.498,88.7,False,True,51.5,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,18.45,2.8714,0.555,0.0017085766686076194,-1.495,75.2,False,True,31.1,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,EUR,15.642,2.3632,0.4749,0.0018793736510290596,1.383,102.2,False,False,56.9,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,AMR,14.173,1.6964,0.4115,,1.607,74.9,True,True,39.6,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,EUR,21.05,3.3956,0.4425,0.0019166343523464582,3.383,53.2,False,False,34.0,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,SAS,30.097,4.8073,0.87,0.0,6.183,91.6,False,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,20.735,2.7235,0.4488,0.008360639433366394,-0.697,94.5,True,False,40.0,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,EUR,35.325,4.9464,0.8922,0.0,2.531,50.1,True,True,22.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,,18.313,2.1922,0.4991,0.00035525083596059474,4.958,93.2,False,False,44.1,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,,17.411,2.8451,0.327,9.967921754856439e-06,2.335,53.5,True,True,33.4,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AMR,26.367,4.0632,0.6873,1.2635793593350946e-05,1.591,77.9,False,True,30.1,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,missense,,29.455,4.4258,0.6601,7.624229261656199e-06,3.397,104.1,True,True,33.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,AFR,16.026,3.4421,0.4961,2.4436486374381807e-06,2.464,92.1,False,False,52.5,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,13.277,1.6784,0.3412,1.805837540662935e-05,5.181,86.1,True,False,42.1,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,EAS,35.237,5.796,0.8414,5.73143048260438e-07,2.414,71.5,,True,22.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,EUR,19.527,3.2099,0.5967,0.004986793269925158,1.505,47.5,True,,32.2,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AFR,26.338,4.8951,0.575,0.00037065980204856934,2.487,69.7,True,True,20.7,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,8.439,1.3045,0.2367,0.01104881049220753,0.216,68.5,False,False,40.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,25.262,4.126,0.5595,0.0005277513574873656,3.153,72.7,False,True,25.1,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,8.348,2.2318,0.2512,0.01243108522125551,-0.395,76.2,False,False,54.8,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,EAS,10.013,0.8978,0.4476,0.0,-0.57,72.9,True,,48.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,nonsense,AMR,35.77,6.1358,0.8321,,2.042,88.9,True,False,39.4,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,missense,AFR,40.0,6.7026,1.0,0.0,0.687,55.0,True,False,48.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AFR,3.735,1.6587,0.1323,0.04430950261449795,-0.186,112.0,False,False,55.2,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,nonsense,AFR,18.03,3.0157,0.5024,7.300748418606298e-05,0.871,75.6,False,True,46.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,10.161,1.2051,0.3684,0.0025512213734158284,1.537,88.3,False,True,27.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,3.659,1.3873,0.0614,0.018318583608765534,0.446,82.6,False,True,49.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,nonsense,EUR,13.641,2.5593,0.3275,0.0019280639934758207,0.478,97.6,False,False,41.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,SAS,14.413,2.1006,0.2593,2.9309687178613058e-06,2.226,90.3,False,False,49.2,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,8.501,0.7803,0.3061,0.0053767382947276605,3.635,117.5,False,True,51.2,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,nonsense,,26.178,3.4934,0.6268,0.0,4.669,102.5,True,False,36.2,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AFR,16.908,2.4137,0.4292,0.0012147787867527893,5.173,93.3,False,False,46.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,16.868,3.311,0.4102,0.006757739568659995,3.54,77.2,True,False,53.2,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,9.229,1.4794,0.2046,0.015962792733180655,1.528,83.3,False,,54.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,SAS,11.907,1.8682,0.4115,0.03504351996626933,1.958,93.7,False,True,39.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,AMR,24.101,3.0528,0.5928,0.0,3.242,64.0,True,False,43.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AFR,11.386,1.4864,0.2066,0.014963119101975519,-0.615,104.8,False,True,43.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,AMR,16.986,2.2169,0.3939,,2.81,77.0,True,True,27.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,4.948,-0.0989,0.1368,0.002033229256987138,1.283,60.2,False,True,49.6,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,EAS,18.351,3.0794,0.5603,1.6200102969206072e-05,1.672,77.9,False,False,53.8,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,AFR,15.254,2.7448,0.5351,4.3964155991133045e-06,1.838,109.5,True,False,44.0,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,frameshift,AMR,25.375,4.7603,0.5451,0.0,3.607,50.3,True,False,46.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,frameshift,AMR,19.965,2.3236,0.5121,0.00020660103101731355,3.277,65.8,False,False,55.8,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,EUR,23.465,2.5486,0.5587,0.0,7.205,82.6,True,True,22.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,nonsense,AFR,24.193,4.0124,0.6745,2.7979980351776787e-07,2.236,50.1,True,False,46.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,EUR,,1.1968,0.3126,0.012710161949556483,2.29,84.2,False,False,48.0,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,20.332,3.2405,0.5875,0.0,1.99,88.2,True,False,38.4,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AFR,18.833,2.5277,0.4852,6.108485774602354e-05,-0.327,100.8,False,False,30.7,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,frameshift,AMR,18.199,2.796,0.3856,0.00899973822260127,,52.4,False,False,43.4,Homo_sapiens,GRCh38,VUS,nao especificada
+PSEN1,missense,EUR,31.865,5.0145,0.804,0.0,3.782,72.9,True,False,42.5,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,27.113,5.1015,0.6982,1.874578171976329e-05,3.555,96.6,True,True,15.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,,EUR,9.365,1.2529,0.2005,0.0002680980235928748,0.548,33.5,False,False,50.5,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,frameshift,EUR,1.529,0.874,0.0598,0.02536765226435297,,76.6,False,False,73.9,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EAS,9.799,0.5586,0.2252,0.00026092677891788096,2.239,96.3,True,,54.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,frameshift,AFR,25.325,3.3823,0.6939,0.0,0.765,75.5,True,True,41.5,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,,29.392,5.6228,0.9225,0.0005610974068198908,4.166,72.6,False,False,31.0,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,AMR,20.314,3.8532,0.4902,2.5488357251382974e-05,-0.274,76.6,False,True,37.8,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,frameshift,EUR,26.328,4.3013,0.6359,3.407240440697013e-07,3.731,82.1,True,True,22.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,AMR,31.796,4.2942,0.8353,0.0,5.958,98.9,True,True,27.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,,3.268,-0.1383,0.0532,0.0005708019972637975,-0.627,99.4,False,False,56.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,,AMR,5.046,1.0348,0.1567,0.1166623986170939,3.711,82.4,False,True,51.5,Homo_sapiens,GRCh38,Benigna,cerebelar
+SOD1,missense,EUR,,3.6292,0.6608,5.821008229428555e-07,5.362,86.1,True,True,29.1,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,frameshift,AMR,,5.0025,0.7009,0.0,2.215,64.6,False,False,25.7,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EAS,11.151,1.8852,0.3527,0.012628123712267247,-2.5,48.1,False,True,54.3,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EUR,27.114,4.1122,0.5533,1.152747373337629e-06,2.805,70.4,True,False,,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,missense,AMR,7.279,1.6118,0.1776,0.00010848971102831356,1.712,57.5,,True,29.6,Homo_sapiens,GRCh38,Benigna,cerebelar
+HTT,missense,AMR,30.71,5.4978,0.8122,1.1457822745761352e-05,6.333,86.8,True,True,22.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,SAS,29.188,4.3097,0.6382,5.626773619801007e-05,6.087,79.8,True,True,32.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,20.745,2.6812,0.4839,3.849292751900919e-07,,115.5,True,True,25.7,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,nonsense,AMR,,2.157,0.1024,0.00031984024383536634,-0.882,75.5,True,True,33.6,Homo_sapiens,GRCh38,VUS,cerebelar
+SOD1,frameshift,EAS,29.934,4.5089,0.626,3.956824534539416e-05,,72.6,True,True,27.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,24.719,3.9493,0.4693,0.0,6.408,51.7,True,True,38.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,4.421,0.5459,0.115,0.31518439520540725,1.418,75.1,False,True,37.2,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,0.0,1.616,0.0,2.5848398465938045e-06,0.368,80.0,False,True,47.5,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,AFR,5.45,0.2041,0.1572,0.041830252725911225,-1.356,68.3,True,True,43.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,EUR,8.457,1.7716,0.1521,0.0,,60.5,True,,50.4,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,AMR,23.333,3.2849,0.6186,1.5138816723771974e-06,-1.752,71.4,True,False,33.3,Homo_sapiens,GRCh38,VUS,cerebelar
+LRRK2,missense,AFR,1.854,-0.8101,0.2046,0.3015797248399289,-0.725,83.4,False,False,65.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,SAS,2.891,0.8937,0.0,0.001952947606427732,3.689,71.6,False,True,46.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+SOD1,missense,AMR,13.642,2.2302,0.4186,4.857795711291605e-05,1.457,79.7,True,False,54.4,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,0.0,0.0178,0.0717,0.08683439920061464,-1.921,61.3,True,False,65.9,Homo_sapiens,GRCh38,Benigna,nao especificada
+LRRK2,nonsense,EUR,20.051,2.4267,0.578,0.0,6.142,74.1,True,,40.3,Homo_sapiens,GRCh38,Patogenica,esporadica
+HTT,missense,AMR,33.961,4.713,0.8735,5.27470501001634e-05,3.916,83.6,False,False,34.4,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,AFR,32.785,5.771,0.9099,7.053954967249805e-07,5.411,95.0,False,False,33.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,nonsense,EUR,23.81,4.2801,0.6316,3.853649168679541e-05,4.305,100.4,True,,40.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,AMR,6.563,0.4091,0.0458,0.004790074314032066,-0.652,99.3,True,False,53.3,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,nonsense,SAS,31.763,4.4673,0.853,0.0,1.682,98.9,True,True,20.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,11.326,1.7501,0.2577,1.616643513861984e-05,-1.945,71.3,True,False,54.8,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,missense,EUR,6.625,1.1521,0.1509,0.00013894802442357515,-0.469,92.7,False,False,63.0,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,nonsense,EUR,21.835,4.2063,0.4245,0.0,2.947,,True,False,56.8,Homo_sapiens,GRCh38,Patogenica,nao especificada
+HTT,frameshift,EAS,31.826,5.8578,0.7193,7.322849547987039e-05,4.855,91.7,True,True,28.9,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,EUR,27.421,3.9771,0.4467,5.871161564845502e-07,6.239,68.3,False,False,50.2,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,nonsense,AMR,9.186,1.4234,0.3556,0.11071185971947352,-2.348,57.9,False,False,54.1,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,AMR,16.384,2.245,0.4146,0.0021992521771883747,0.499,63.1,False,False,52.8,Homo_sapiens,GRCh38,Benigna,cerebelar
+LRRK2,nonsense,AMR,25.735,4.0217,0.576,0.0,4.543,90.4,True,False,55.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,missense,EUR,29.399,4.4505,0.8243,5.081876755407915e-06,3.881,77.9,False,False,36.1,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,frameshift,AMR,27.894,4.2633,0.6975,4.757578504621163e-05,4.679,75.3,False,False,31.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,AMR,28.037,4.4115,0.7154,0.0,2.304,97.5,True,False,45.2,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,missense,EAS,18.764,3.4413,0.4391,7.025073307461472e-06,3.498,77.2,True,True,33.3,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,frameshift,,31.915,5.1909,0.87,0.0,4.371,90.7,True,True,19.7,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,5.014,1.0383,0.0131,0.01539260449467857,1.566,69.9,False,False,50.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,2.749,-0.4362,0.0384,0.00028428286271999474,-1.418,102.6,True,False,59.3,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,frameshift,EUR,31.028,4.7679,0.6745,0.0,5.107,79.3,True,,34.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,7.354,2.1973,0.284,0.017647049309285224,-0.859,48.4,False,True,50.4,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,AFR,22.983,3.6531,0.5497,0.0,2.322,64.0,False,False,45.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,,1.4563,0.2405,0.0,0.054,76.4,True,False,45.9,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EUR,35.448,5.7515,0.9118,0.0,5.908,60.5,True,True,34.8,Homo_sapiens,GRCh38,Patogenica,esporadica
+PSEN1,nonsense,EUR,20.888,3.9779,0.5248,0.0,6.838,78.0,False,True,33.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,nonsense,AFR,27.172,3.9154,0.6791,0.0,4.982,91.7,True,True,34.6,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,frameshift,AMR,,3.0853,0.5525,4.71766002195852e-05,5.23,85.9,False,False,53.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,nonsense,AMR,16.671,3.5583,0.4389,1.0353950642033445e-05,2.126,87.9,True,True,30.1,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EUR,31.298,5.6335,0.7952,0.0,3.764,80.5,True,False,38.0,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,missense,EAS,,4.6617,0.6274,0.0,3.409,84.8,,False,41.6,Homo_sapiens,GRCh38,Patogenica,nao especificada
+SOD1,,AFR,28.728,4.1298,0.795,3.244153265135114e-05,3.365,48.1,,True,28.3,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,,1.072,-0.1908,0.0503,0.3326620851763538,2.357,83.3,False,False,53.8,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,,17.614,2.3924,0.4637,1.5609838550715122e-06,1.12,68.1,,True,38.1,Homo_sapiens,GRCh38,VUS,cerebelar
+HTT,missense,EUR,31.586,5.6533,0.8909,0.0,3.348,,False,True,26.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,15.207,2.9538,0.3949,0.038890488408480486,0.45,,False,False,40.5,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,missense,EAS,8.297,2.0591,0.1722,,0.358,49.8,False,False,46.8,Homo_sapiens,GRCh38,Benigna,cerebelar
+PSEN1,missense,AMR,9.48,1.2561,0.2025,0.042010510052344296,-0.606,88.1,False,True,40.6,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,SAS,24.449,4.1381,0.6863,3.248547715405331e-05,4.793,77.9,True,False,40.0,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,nonsense,AMR,7.624,2.37,0.1732,0.0012044104542126332,2.393,62.7,True,False,58.7,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,missense,SAS,31.984,5.049,0.9376,1.7102344907395446e-06,5.065,92.9,True,False,35.5,Homo_sapiens,GRCh38,Patogenica,esporadica
+SOD1,nonsense,EUR,25.35,4.5431,0.6604,0.0,5.22,83.2,True,False,41.3,Homo_sapiens,GRCh38,Patogenica,nao especificada
+PSEN1,,AFR,15.714,3.1576,0.4645,4.018901866015782e-06,1.998,71.4,False,False,52.6,Homo_sapiens,GRCh38,VUS,esporadica
+HTT,missense,EUR,2.327,-0.336,0.0138,0.0020453500505812597,3.479,77.3,False,False,54.2,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,frameshift,EAS,20.782,2.8914,0.3971,,5.486,91.7,True,False,43.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,EUR,9.402,1.6644,0.3669,0.03769706264169859,1.362,104.4,False,False,52.5,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,missense,EUR,14.852,2.0384,0.4324,0.016268313761730838,-0.13,99.8,False,False,31.3,Homo_sapiens,GRCh38,Benigna,esporadica
+HTT,missense,AFR,10.839,2.0744,0.1849,0.0006077608914879634,-0.206,87.0,False,,43.6,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,EUR,3.631,1.3259,0.0665,0.002882923999101656,-0.225,74.2,False,False,54.0,Homo_sapiens,GRCh38,Benigna,esporadica
+PSEN1,missense,EUR,27.667,3.7476,0.7837,0.0,0.101,87.2,True,True,38.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+HTT,missense,AMR,8.998,1.3072,0.2531,0.24002318993228966,0.778,58.2,False,False,45.4,Homo_sapiens,GRCh38,Benigna,nao especificada
+HTT,frameshift,EUR,13.98,2.4201,0.4223,0.007929859857654207,0.289,100.7,True,False,41.6,Homo_sapiens,GRCh38,VUS,esporadica
+PSEN1,nonsense,SAS,21.441,3.954,0.5192,0.00023147086107246147,3.625,84.2,True,False,46.6,Homo_sapiens,GRCh38,VUS,nao especificada
+SOD1,nonsense,AMR,10.401,2.0339,0.2338,0.025306833124008592,-0.503,72.5,False,False,49.2,Homo_sapiens,GRCh38,Benigna,esporadica
+SOD1,nonsense,AMR,,1.7538,0.2959,0.0008220222697873468,-0.587,90.2,False,True,47.7,Homo_sapiens,GRCh38,Benigna,nao especificada
+PSEN1,missense,SAS,32.215,5.7496,0.9003,0.0,5.68,58.6,True,True,,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,frameshift,EUR,,3.4941,0.5537,0.0,3.591,57.7,True,True,34.4,Homo_sapiens,GRCh38,Patogenica,cerebelar
+LRRK2,missense,EUR,12.032,2.2273,0.0663,0.027986778450016906,3.858,36.2,False,True,50.1,Homo_sapiens,GRCh38,Benigna,esporadica
+LRRK2,missense,AMR,15.102,2.7582,0.5487,0.005090872907349378,1.718,57.6,True,True,44.0,Homo_sapiens,GRCh38,VUS,nao especificada
+LRRK2,frameshift,SAS,21.792,4.5267,0.6387,1.7332533161156674e-07,5.529,98.2,True,False,,Homo_sapiens,GRCh38,Patogenica,esporadica
+LRRK2,missense,EUR,18.592,2.9041,0.5458,1.1648506429440576e-05,1.538,96.8,False,False,50.3,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,missense,EAS,21.7,3.5426,0.4975,9.665286012720784e-06,2.731,83.9,True,False,47.5,Homo_sapiens,GRCh38,VUS,nao especificada
+HTT,missense,AMR,31.112,4.6188,0.7805,2.38674059304095e-06,4.496,78.3,True,True,29.5,Homo_sapiens,GRCh38,Patogenica,cerebelar
+SOD1,missense,AMR,13.05,2.472,0.329,0.0018523643681950222,1.959,69.3,True,False,,Homo_sapiens,GRCh38,VUS,esporadica
+SOD1,nonsense,AMR,21.396,3.8284,0.494,1.0461530874066966e-07,4.108,,False,,35.8,Homo_sapiens,GRCh38,Patogenica,cerebelar
+PSEN1,missense,,13.581,2.776,0.3353,0.0,-1.908,74.5,True,False,54.3,Homo_sapiens,GRCh38,VUS,esporadica
+LRRK2,missense,EAS,2.464,-0.1663,0.0318,0.05145641383713508,1.257,78.8,True,False,67.8,Homo_sapiens,GRCh38,Benigna,esporadica

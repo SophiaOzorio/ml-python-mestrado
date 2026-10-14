@@ -1,0 +1,17 @@
+coluna_original,categoria
+tipo_variante,frameshift
+tipo_variante,missense
+tipo_variante,nonsense
+ancestralidade,AFR
+ancestralidade,AMR
+ancestralidade,Desconhecido
+ancestralidade,EAS
+ancestralidade,EUR
+ancestralidade,SAS
+gene,HTT
+gene,LRRK2
+gene,PSEN1
+gene,SOD1
+classificacao_clinica,Benigna
+classificacao_clinica,Patogenica
+classificacao_clinica,VUS
