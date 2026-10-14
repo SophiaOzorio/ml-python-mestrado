@@ -33,7 +33,7 @@ def pagina_estrutura() -> str:
         unsafe_allow_html=True,
     )
 
-    title = "Métricas dos Modelos - Variantes em Doença Neurológica"
+    title = "Métricas dos Modelos - Variantes em Ataxias"
     st.markdown(
         f"<br><h3 style='text-align: center; '>{title}</h3>", unsafe_allow_html=True
     )
