@@ -8,7 +8,7 @@ if str(RAIZ) not in sys.path:
 
 import streamlit as st  # noqa: E402
 
-from dev.script.src.paginas import Paginas  # noqa: E402
+from dev.script.app.src.paginas import Paginas  # noqa: E402
 
 
 def pagina_estrutura() -> str:
