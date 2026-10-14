@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Arquivos de saída e logs
+*.log
+*.tmp
+
+# Dados e resultados — revise antes de versionar
+data/
+datasets/
+results/
+outputs/
+
+# Credenciais
+.env
+
+# Arquivos locais do VS Code
+.vscode/
