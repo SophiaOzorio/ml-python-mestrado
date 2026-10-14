@@ -61,16 +61,26 @@ MODELOS_REG = ["Regressão Linear Múltipla", "SVR", "Bayesian Ridge", "Rede Neu
 
 CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 
-# ----------------------------------------------------------------------
-# Configuração dos Caminhos (compatível com local e Streamlit Cloud)
-# ----------------------------------------------------------------------
-DIR_SCRIPT = Path(__file__).resolve().parents[1]
-
-# Como a pasta 'results' está em dev/script/results/split_dataset:
+#Procura, subindo a partir deste arquivo, a pasta que contém "results"
+# (dev/script). Assim funciona esteja o paginas.py em dev/script/src ou em
+# dev/script/app/src, e não depende do diretório de execução.
+def _acha_dir_script() -> Path:
+    for pasta in Path(__file__).resolve().parents:
+        if (pasta / "results").is_dir():
+            return pasta
+    return Path(__file__).resolve().parents[1]
+ 
+ 
+DIR_SCRIPT = _acha_dir_script()
 DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
-DIR_CLASSIF = DIR_SPLIT
-DIR_REGR = DIR_SPLIT
-
+DIR_CLASSIF = DIR_SCRIPT / "results" / "classificacao"
+# Resultados da regressão: aceita results/regressao (organizado) ou
+# results/split_dataset (onde o notebook salvou); usa a primeira que estiver completa
+DIRS_REGR = [
+    DIR_SCRIPT / "results" / "regressao",
+    DIR_SCRIPT / "results" / "split_dataset",
+]
+ 
 # ----------------------------------------------------------------------
 # Busca de dados (com cache)
 # ----------------------------------------------------------------------
@@ -85,6 +95,7 @@ def _le_split(conjunto: str) -> pd.DataFrame:
         partes.append(y_idade[[ALVO_REG]])
     partes.append(pd.read_csv(DIR_SPLIT / f"y_ataxia_{conjunto}_ready.csv"))
     return pd.concat(partes, axis=1)
+ 
 
 
 @st.cache_data
