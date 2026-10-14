@@ -54,33 +54,29 @@ MODELOS_CLUSTER = {
     "dbscan": "DBSCAN",
     "agglomerative": "Agglomerative",
 }
-## Nomes das colunas de predição salvas nos notebooks
-#MODELOS_CLF = ["k-NN", "SVM", "RF", "GBM", "NB", "NN"]
-#MODELOS_REG = ["Regressão Linear Múltipla", "SVR", "Bayesian Ridge", "Rede Neural"]#
-#
-#CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 
-# Descobre a raiz do projeto de forma dinâmica independentemente de onde for executado
-# __file__ está em: .../dev/script/src/paginas.py -> subindo 3 níveis chegamos à raiz do repositório
+# Nomes das colunas de predição salvas nos notebooks
+MODELOS_CLF = ["k-NN", "SVM", "RF", "GBM", "NB", "NN"]
+MODELOS_REG = ["Regressão Linear Múltipla", "SVR", "Bayesian Ridge", "Rede Neural"]
+
+CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
+
+# ----------------------------------------------------------------------
+# Configuração dos Caminhos (compatível com local e Streamlit Cloud)
+# ----------------------------------------------------------------------
+# __file__ está em: dev/script/src/paginas.py
+# Subindo 3 níveis chegamos à raiz do repositório
 DIR_RAIZ = Path(__file__).resolve().parents[3]
 
-# Tenta encontrar a pasta 'results' na raiz do repositório ou no caminho padrão do Streamlit
-DIR_SPLIT = DIR_RAIZ / "dev" / "results" / "split_dataset"
+# Define o caminho correto para a pasta results/split_dataset com base na raiz
+DIR_SPLIT = DIR_RAIZ / "dev" / "script" / "results" / "split_dataset"
+
+# Se não encontrar nesse caminho (caso execute localmente de outra forma), tenta o caminho relativo direto
 if not DIR_SPLIT.exists():
-    # Caminho alternativo caso os ficheiros estejam diretamente na raiz ou noutra estrutura
     DIR_SPLIT = Path(__file__).resolve().parents[1] / "results" / "split_dataset"
 
-DIR_CLASSIF = DIR_SPLIT  # Ajuste conforme a estrutura real dos seus resultados no GitHub
+DIR_CLASSIF = DIR_SPLIT
 DIR_REGR = DIR_SPLIT
-
-# Este arquivo fica em dev/script/src/paginas.py -> parents[1] = dev/script
-# (usar __file__ evita depender do diretório de execução)
-DIR_SCRIPT = Path(__file__).resolve().parents[1]
-DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
-DIR_CLASSIF = DIR_SCRIPT / "results" / "classificacao"
-# O notebook de regressão salvou os resultados dentro de split_dataset
-DIR_REGR = DIR_SCRIPT / "results" / "split_dataset"
-
 
 # ----------------------------------------------------------------------
 # Busca de dados (com cache)
