@@ -64,17 +64,10 @@ CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 # ----------------------------------------------------------------------
 # Configuração dos Caminhos (compatível com local e Streamlit Cloud)
 # ----------------------------------------------------------------------
-# __file__ está em: dev/script/src/paginas.py
-# Subindo 3 níveis chegamos à raiz do repositório
-DIR_RAIZ = Path(__file__).resolve().parents[3]
+DIR_SCRIPT = Path(__file__).resolve().parents[1]
 
-# Define o caminho correto para a pasta results/split_dataset com base na raiz
-DIR_SPLIT = DIR_RAIZ / "dev" / "script" / "results" / "split_dataset"
-
-# Se não encontrar nesse caminho (caso execute localmente de outra forma), tenta o caminho relativo direto
-if not DIR_SPLIT.exists():
-    DIR_SPLIT = Path(__file__).resolve().parents[1] / "results" / "split_dataset"
-
+# Como a pasta 'results' está em dev/script/results/split_dataset:
+DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
 DIR_CLASSIF = DIR_SPLIT
 DIR_REGR = DIR_SPLIT
 
