@@ -76,7 +76,7 @@ DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
 DIR_CLASSIF = DIR_SCRIPT / "results" / "classificacao"
 # Resultados da regressão: aceita results/regressao (organizado) ou
 # results/split_dataset (onde o notebook salvou); usa a primeira que estiver completa
-DIRS_REGR = [
+DIR_REGR = [
     DIR_SCRIPT / "results" / "regressao",
     DIR_SCRIPT / "results" / "split_dataset",
 ]
