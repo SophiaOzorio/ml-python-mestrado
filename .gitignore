@@ -16,9 +16,9 @@ env/
 *.tmp
 
 # Dados e resultados — revise antes de versionar
-data/
+# data/
 datasets/
-results/
+# results/
 outputs/
 
 # Credenciais
