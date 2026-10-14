@@ -1,14 +1,43 @@
-import streamlit as st
-import pandas as pd
-import matplotlib.pyplot as plt
-from scipy.stats import chi2_contingency
-from sklearn.metrics import (
-    accuracy_score,
-    confusion_matrix,
-    ConfusionMatrixDisplay,
-    classification_report,
-)
+# Importando modelos
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.naive_bayes import GaussianNB
+from sklearn.neural_network import MLPClassifier
 
+# Visualização dos dados
+import matplotlib.pyplot as plt
+
+# Edição das databases
+import pandas as pd
+import numpy as np
+
+# Seleção de hiperparâmetros e validação cruzada
+from sklearn.model_selection import GridSearchCV
+from sklearn.model_selection import StratifiedKFold
+
+# Estruturação dos dados e pré-processamento
+from sklearn.compose import ColumnTransformer
+
+# Organização do fluxo de trabalho (Pipeline)
+from sklearn.pipeline import Pipeline
+
+# Seleção de variáveis
+from sklearn.feature_selection import VarianceThreshold
+from sklearn.feature_selection import SelectKBest
+from sklearn.feature_selection import f_classif
+
+# Métricas da classificação
+from sklearn.metrics import (
+                                classification_report,
+                                confusion_matrix,
+                                ConfusionMatrixDisplay,
+                                accuracy_score,
+                                precision_score,
+                                recall_score,
+                                f1_score,
+                            )
 
 class Classifier:
     """
@@ -17,7 +46,13 @@ class Classifier:
         Parâmetros
         ----------
         df : pd.DataFrame
-            DataFrame contendo as features e a coluna alvo 'classe'.
+            DataFrame de TREINO, com as features (já pré-processadas) e a
+            coluna alvo 'ataxia'. É usado no GridSearchCV.
+        df_val : pd.DataFrame, opcional
+            DataFrame de VALIDAÇÃO (mesmas colunas). Se não for informado,
+            a avaliação é feita no próprio df.
+        alvo : str, opcional
+            Nome da coluna alvo (default é 'ataxia').
 
         Métodos
         -------
@@ -25,61 +60,23 @@ class Classifier:
             Treina e avalia o modelo especificado.
     """
 
-    def __init__(self, df: pd.DataFrame) -> None:
+    def __init__(
+        self, df: pd.DataFrame, df_val: pd.DataFrame = None, alvo: str = "ataxia"
+    ) -> None:
         self.df = df
+        self.X = df.drop(alvo, axis=1)
+        self.y = df[alvo]
 
-        return None
-
-    def testar_hipotese(self) -> None:
-        """
-        Testa a hipótese de que a distribuição das classes no treino e no
-        teste é estatisticamente igual (homogênea)
-        ou diferente (heterogênea) usando o teste Qui-Quadrado.
-
-        Parâmetros:
-            df : pd.DataFrame
-                DataFrame contendo as colunas 'Dataset' e 'Classe_Predita'.
-            modelo : str
-                Nome do modelo para exibição nos resultados.
-        Retorna:
-            None
-        """
-        # 3. Criando a Tabela de Contingência (Frequências Observadas)
-        tabela_contingencia = pd.crosstab(
-            self.df["Dataset"],
-            self.df["Classe_Predita"],
-        )
-        st.write("Tabela de Contingência (Observada):")
-        st.dataframe(tabela_contingencia.T)
-        st.write("-" * 40)
-
-        # 4. Realizando o Teste Qui-Quadrado
-        chi2, p_valor, graus, _ = chi2_contingency(tabela_contingencia)
-
-        # 5. Exibindo os resultados
-        st.write(f"Estatística Qui-Quadrado: {chi2:.4f}")
-        st.write(f"Graus de Liberdade: {graus}")
-        st.write(f"Valor-p: {p_valor:.4f}")
-
-        # 6. Tomada de Decisão (usando nível de significância de 5%)
-        alpha = 0.05
-        st.write("\nConclusão:")
-        if p_valor < alpha:
-            mensagem = "Rejeitamos H0: "
-            mensagem += "A distribuição das classes no treino e no teste é "
-            mensagem += "<b style='color: red;'>ESTATISTICAMENTE DIFERENTE "
-            mensagem += "(Heterogênea).</b>"
-            st.markdown(mensagem, unsafe_allow_html=True)
+        # Conjunto usado na avaliação: validação (ou o próprio treino)
+        if df_val is not None:
+            self.X_val = df_val.drop(alvo, axis=1)
+            self.y_val = df_val[alvo]
         else:
-            mensagem = "Falhamos em rejeitar H0: "
-            mensagem += "A distribuição das classes no treino e no teste é "
-            mensagem += "<b style='color: green;'>ESTATISTICAMENTE IGUAL "
-            mensagem += "(Homogênea).</b>"
-            st.markdown(mensagem, unsafe_allow_html=True)
+            self.X_val, self.y_val = self.X, self.y
 
         return None
 
-    def matrix_confusao(self, df: pd.DataFrame, obs: str, pred: str) -> None:
+    def __matrix_confusao(self, grid_search: GridSearchCV) -> None:
         """
         Exibe a matriz de confusão do melhor modelo encontrado pelo
         GridSearchCV.
@@ -88,21 +85,486 @@ class Classifier:
             grid_search : GridSearchCV
                 Objeto GridSearchCV já ajustado com os dados.
         """
-        y_obs = df[obs]
-        y_pred = df[pred]
+        grid_search.fit(self.X, self.y)
 
-        accuracy = accuracy_score(y_obs, y_pred)
-        cm = confusion_matrix(y_obs, y_pred)
+        # 10. Avaliação no conjunto de Validação
+        best_model = grid_search.best_estimator_
+        y_pred = best_model.predict(self.X_val)
+
+        accuracy = accuracy_score(self.y_val, y_pred)
+        cm = confusion_matrix(self.y_val, y_pred)
         disp = ConfusionMatrixDisplay(
             confusion_matrix=cm,
-            display_labels=y_obs.value_counts().index,
+            display_labels=np.sort(self.y_val.unique()),
         )
         disp.plot(cmap=plt.cm.Greens)
         plt.title(f"Accuracy {accuracy:.2f}")
-        st.pyplot(plt)
-        st.write("\nClassification Report:")
-        st.dataframe(
-            (pd.DataFrame(classification_report(y_obs, y_pred, output_dict=True)).T)
-        )
+        plt.show()
+        print("\nClassification Report:")
+        print(classification_report(self.y_val, y_pred))
+        return None
+
+    def __retornar_metricas(
+        self, grid_search: GridSearchCV
+    ) -> tuple[pd.DataFrame, np.ndarray]:
+        grid_search.fit(self.X, self.y)
+
+        # 10. Avaliação no conjunto de Validação
+        best_model = grid_search.best_estimator_
+        y_pred = best_model.predict(self.X_val)
+
+        #  Acurácia
+        acc = accuracy_score(self.y_val, y_pred)
+
+        # Precision
+        precision = precision_score(self.y_val, y_pred, average="weighted")
+
+        # Recall
+        recall = recall_score(self.y_val, y_pred, average="weighted")
+
+        # F1-score
+        f1 = f1_score(self.y_val, y_pred, average="weighted")
+
+        retorno = pd.DataFrame(
+            {
+                "Acurácia": [acc],
+                "Precision": [precision],
+                "Recall": [recall],
+                "F1-Score": [f1],
+            }
+        ).round(4)
+
+        return retorno, y_pred
+
+    def __metricas_pontuais(self, grid_search: GridSearchCV) -> None:
+        """
+        Exibe os melhores hiperparâmetros e a acurácia do melhor modelo
+        encontrado pelo GridSearchCV.
+            Parâmetros
+            ----------
+            grid_search : GridSearchCV
+                Objeto GridSearchCV já ajustado com os dados.
+        """
+        # 10. Treinamento Final no Dataset Completo
+        # Após validar a capacidade de generalização via Nested CV, ajustamos
+        # o GridSearch nos dados totais
+
+        print("--- Treinando modelo com Pipeline de pré-processamento ---")
+        grid_search.fit(self.X, self.y)
+
+        # 9. Exibição dos Resultados
+        print("\n--- Melhores Resultados do Grid Search ---")
+        print(f"Melhores hiperparâmetros: {grid_search.best_params_}")
+        print(f"Melhor acurácia (CV): {grid_search.best_score_:.4f}")
+
+        # 10. Avaliação no conjunto de Validação
+        best_model = grid_search.best_estimator_
+        y_pred = best_model.predict(self.X_val)
+
+        print("\n--- Desempenho no Conjunto de Validação ---")
+        print(f"Acurácia final: {accuracy_score(self.y_val, y_pred):.4f}\n")
 
         return None
+
+    def __variaveis_selecionadas(self, grid_search: GridSearchCV) -> pd.DataFrame:
+        """
+        Exibe as variáveis selecionadas pelo melhor modelo encontrado pelo
+        GridSearchCV.
+            Parâmetros
+            ----------
+            grid_search : GridSearchCV
+                Objeto GridSearchCV já ajustado com os dados.
+
+            Retorna
+            -------
+            df_summary : pd.DataFrame
+                DataFrame contendo o status de cada atributo no pipeline.
+        """
+        # 1. Extrai o melhor pipeline ajustado pelo GridSearchCV
+        best_pipeline = grid_search.best_estimator_
+
+        # 2. Recupera os nomes de TODAS as colunas geradas após a
+        # codificação/escala (ColumnTransformer)
+        feat_names_orig = best_pipeline["preprocessor"].get_feature_names_out()
+
+        # 3. Etapa 1: Aplica a máscara do VarianceThreshold
+        mask_variance = best_pipeline["var_threshold"].get_support()
+        features_after_variance = feat_names_orig[mask_variance]
+
+        # 4. Etapa 2: Aplica a máscara do SelectKBest sobre as colunas
+        # sobressalentes
+        mask_kbest = best_pipeline["feature_selection"].get_support()
+        selected_features = features_after_variance[mask_kbest]
+
+        # 5. Imprime o resultado final de forma amigável
+        m = "Total de variáveis "
+        print(f"{m}originais pré-processadas: {len(feat_names_orig)}")
+        print(f"{m}após VarianceThreshold:    {len(features_after_variance)}")
+        print(f"{m}selecionadas no modelo:    {len(selected_features)}")
+
+        print("\n--- Lista das Variáveis Selecionadas ---")
+        for i, feature in enumerate(selected_features, 1):
+            print(f"{i}. {feature}")
+
+        # Cria uma máscara final combinando as duas seleções
+        final_mask = mask_variance.copy()
+        final_mask[mask_variance] = mask_kbest
+
+        # Constrói o relatório em DataFrame
+        df_summary = pd.DataFrame(
+            {
+                "Atributo_Preprocessado": feat_names_orig,
+                "Passou_Variancia": mask_variance,
+                "Selecionado_Final": final_mask,
+            }
+        )
+
+        print("\n--- Status de Cada Atributo no Pipeline ---")
+        print(df_summary.to_string(index=False))
+
+        return df_summary
+
+    def __preprocessador(self) -> ColumnTransformer:
+        """
+        Cria um pré-processador que apenas repassa as variáveis, pois os
+        dados já vêm padronizados e codificados (split_transform).
+            Retorna
+            -------
+            preprocessor : ColumnTransformer
+                Objeto ColumnTransformer para pré-processamento.
+        """
+        preprocessor = ColumnTransformer(
+            transformers=[("dados", "passthrough", self.X.columns)],
+            verbose_feature_names_out=False,
+        )
+        return preprocessor
+
+    def __knn_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador KNN e define a grade de
+        hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e KNN.
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        # 4. Pipeline Principal
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("knn", KNeighborsClassifier()),
+            ]
+        )
+        # 5. Definição da Grade de Hiperparâmetros
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, 20, "all"],
+            "knn__n_neighbors": [5, 11, 21, 31, 51],
+            "knn__weights": ["uniform"],
+            "knn__metric": ["euclidean", "manhattan"],
+        }
+
+        return pipeline, param_grid
+
+    def __svm_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador SVM e define a grade de
+        hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e SVM.
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        # 4. Pipeline Principal com o Classificador SVM (SVC)
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("svm", SVC(random_state=42)),
+            ]
+        )
+        # 5. Definição da Grade de Hiperparâmetros para o SVM
+        # Note o prefixo 'svm__' para acessar os parâmetros do SVC dentro do
+        # Pipeline
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, "all"],
+            # Parâmetro de regularização
+            "svm__C": [0.1, 1, 10, 100],
+            # Tipo de kernel (Linear ou Radial Basis Function)
+            "svm__kernel": ["linear", "rbf"],
+            # Coeficiente do kernel RBF
+            "svm__gamma": ["scale", "auto", 0.01, 0.1],
+        }
+
+        return pipeline, param_grid
+
+    def __rf_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador Random Forest e define a
+        grade de hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e
+                Random Forest.
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        # 4. Pipeline Principal com Random Forest
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("rf", RandomForestClassifier(random_state=42)),
+            ]
+        )
+
+        # 5. Definição da Grade de Hiperparâmetros para o Random Forest
+        # Note o prefixo 'rf__' para acessar os parâmetros do modelo dentro do
+        # Pipeline
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, "all"],
+            # Número de árvores na floresta
+            "rf__n_estimators": [50, 100, 200],
+            # Profundidade máxima de cada árvore
+            "rf__max_depth": [None, 5, 10],
+            # Mínimo de amostras para dividir um nó
+            "rf__min_samples_split": [2, 5],
+            # Critério de medição de qualidade da divisão
+            "rf__criterion": ["gini", "entropy"],
+        }
+
+        return pipeline, param_grid
+
+    def __gbm_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador Gradient Boosting e define
+        a grade de hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e
+                Gradient Boosting.
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        # 4. Pipeline Principal com Gradient Boosting
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("gb", GradientBoostingClassifier(random_state=42)),
+            ]
+        )
+
+        # 5. Definição da Grade de Hiperparâmetros para o Gradient Boosting
+        # Note o prefixo 'gb__' para acessar os parâmetros do modelo dentro
+        # do Pipeline
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, "all"],
+            # Número de estágios de boosting (árvores)
+            "gb__n_estimators": [50, 100, 150],
+            # Taxa de aprendizado (encolhimento do impacto de cada árvore)
+            "gb__learning_rate": [0.01, 0.1, 0.2],
+            # Profundidade máxima dos estimadores individuais
+            "gb__max_depth": [3, 5],
+            # Fração de amostras usadas para ajustar os estimadores base
+            "gb__subsample": [0.8, 1.0],
+        }
+
+        return pipeline, param_grid
+
+    def __nb_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador Gaussian Naive Bayes e
+        define a grade de hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e
+                Gaussian Naive Bayes.
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("nb", GaussianNB()),
+            ]
+        )
+
+        # 5. Definição da Grade de Hiperparâmetros para o GaussianNB
+        # Note o prefixo 'nb__' para acessar os parâmetros do modelo dentro
+        # do Pipeline
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, "all"],
+            # Suavização de variância para estabilidade numérica
+            "nb__var_smoothing": np.logspace(0, -9, num=10),
+        }
+
+        return pipeline, param_grid
+
+    def __nn_classify(self) -> tuple[Pipeline, dict]:
+        """
+        Cria um pipeline para o classificador Rede Neural (MLP) e define
+        a grade de hiperparâmetros para busca.
+            Retorna
+            -------
+            pipeline : Pipeline
+                Objeto Pipeline configurado com pré-processamento e
+                Rede Neural (MLP).
+            param_grid : dict
+                Dicionário contendo a grade de hiperparâmetros para busca.
+        """
+        # 4. Pipeline Principal com Rede Neural (MLP)
+        # max_iter expandido para garantir convergência durante a otimização
+        pipeline = Pipeline(
+            [
+                ("preprocessor", self.__preprocessador()),
+                ("var_threshold", VarianceThreshold(threshold=1e-4)),
+                (
+                    "feature_selection",
+                    SelectKBest(score_func=f_classif, k=min(10, self.X.shape[1])),
+                ),
+                ("mlp", MLPClassifier(max_iter=1000, random_state=42)),
+            ]
+        )
+
+        # 5. Definição da Grade de Hiperparâmetros para a Rede Neural
+        # Note o prefixo 'mlp__' para acessar os parâmetros do modelo dentro do
+        # Pipeline
+        param_grid = {
+            "var_threshold__threshold": [1e-4, 0.01, 0.05],
+            "feature_selection__k": [1, 2, "all"],
+            # Arquiteturas: 1 camada com 10/50 neurônios ou 2 camadas (20, 10)
+            "mlp__hidden_layer_sizes": [(10,), (20, 10), (50,)],
+            # Funções de ativação
+            "mlp__activation": ["relu", "tanh"],
+            # Otimizadores
+            "mlp__solver": ["adam", "lbfgs"],
+            # Termo de regularização L2 (penalty)
+            "mlp__alpha": [0.0001, 0.01],
+        }
+
+        return pipeline, param_grid
+
+    def classify(
+        self, modelo: str, n_splits: int = 3
+    ) -> tuple[pd.DataFrame, np.ndarray]:
+        """
+        Treina e avalia o modelo especificado.
+            Parâmetros
+            ----------
+            modelo : str
+                Nome do modelo a ser treinado. Opções:
+                                'knn', 'svm', 'rf', 'gbm', 'nb', 'nn'.
+            n_splits : int, opcional
+                Número de divisões para a validação cruzada (default é 3).
+            Retorna
+                return retorno, grid_search.predict(self.X)
+                pd.DataFrame
+        """
+        if modelo == "knn":
+            # 7. Configuração do GridSearch para K-NN
+            estimator, param_grid = self.__knn_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+        elif modelo == "svm":
+            # 7. Configuração do GridSearch para SVM
+            estimator, param_grid = self.__svm_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+        elif modelo == "rf":
+            # 7. Configuração do GridSearch para Random Forest
+            estimator, param_grid = self.__rf_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+        elif modelo == "gbm":
+            # 7. Configuração do GridSearch para Gradient Boosting Mach. (GBM)
+            estimator, param_grid = self.__gbm_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+        elif modelo == "nb":
+            # 7. Configuração do GridSearch para Gaussian Naive Bayes (NB)
+            estimator, param_grid = self.__nb_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+        elif modelo == "nn":
+            # 7. Configuração do GridSearch para Rede Neural (MLP)
+            estimator, param_grid = self.__nn_classify()
+            inner_cv = StratifiedKFold(n_splits=n_splits, shuffle=True, random_state=42)
+            grid_search = GridSearchCV(
+                estimator=estimator,
+                param_grid=param_grid,
+                cv=inner_cv,
+                scoring="accuracy",
+                n_jobs=-1,
+            )
+
+        self.__metricas_pontuais(grid_search=grid_search)
+        self.__matrix_confusao(grid_search=grid_search)
+        self.__variaveis_selecionadas(grid_search=grid_search)
+
+        retorno = self.__retornar_metricas(grid_search=grid_search)
+
+        return retorno

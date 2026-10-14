@@ -1,217 +1,398 @@
-import os
+import io
+from contextlib import redirect_stdout
+from pathlib import Path
+
+import matplotlib.pyplot as plt
+import numpy as np
 import pandas as pd
+import seaborn as sns
 import streamlit as st
 from joblib import load
-from pydantic import validate_call
+from scipy.stats import chi2_contingency, ks_2samp, levene, mannwhitneyu, spearmanr
+from scipy.stats import ttest_ind
+from sklearn.metrics import (
+    ConfusionMatrixDisplay,
+    accuracy_score,
+    confusion_matrix,
+    f1_score,
+    mean_absolute_error,
+    mean_absolute_percentage_error,
+    mean_squared_error,
+    precision_score,
+    r2_score,
+    recall_score,
+)
 
-from src.acesso_data import acesso_data_banco
-from src.modelos.clustering import Clustering
-from src.modelos.classifier import Classifier
-from src.modelos.regression import Regression
+# Só o Clustering é importado: classifier.py/regression.py re-treinam o
+# GridSearch (e o regression.py importa o TensorFlow), então o app lê os
+# resultados que os notebooks de treinamento já salvaram.
+from dev.script.src.modelos.clustering import Clustering
+
+# O Streamlit roda sem tela; evita plt.show() tentar abrir janela
+plt.switch_backend("Agg")
+
+# ----------------------------------------------------------------------
+# Configurações do projeto (ajuste aqui, o resto do código não muda)
+# ----------------------------------------------------------------------
+ALVO_CLF = "ataxia"
+ALVO_REG = "idade_inicio_sintomas"
+
+# Código do alvo (LabelEncoder) -> nome original da classe
+NOMES_CLASSES: dict = {0: "cerebelar", 1: "esporadica", 2: "nao especificada"}
+
+# Variáveis contínuas usadas no clustering (as mesmas do notebook)
+COLUNAS_NUM = [
+    "cadd_phred",
+    "conservacao_phylop",
+    "profundidade_leitura",
+    "gnomad_af_log",
+    "idade_inicio_sintomas",
+]
+
+MODELOS_CLUSTER = {
+    "kmeans": "K-means",
+    "dbscan": "DBSCAN",
+    "agglomerative": "Agglomerative",
+}
+# Nomes das colunas de predição salvas nos notebooks
+MODELOS_CLF = ["k-NN", "SVM", "RF", "GBM", "NB", "NN"]
+MODELOS_REG = ["Regressão Linear Múltipla", "SVR", "Bayesian Ridge", "Rede Neural"]
+
+CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
+
+# Este arquivo fica em dev/script/src/paginas.py -> parents[1] = dev/script
+# (usar __file__ evita depender do diretório de execução)
+DIR_SCRIPT = Path(__file__).resolve().parents[1]
+DIR_SPLIT = DIR_SCRIPT / "results" / "split_dataset"
+DIR_CLASSIF = DIR_SCRIPT / "results" / "classificacao"
+# O notebook de regressão salvou os resultados dentro de split_dataset
+DIR_REGR = DIR_SCRIPT / "results" / "split_dataset"
 
 
+# ----------------------------------------------------------------------
+# Busca de dados (com cache)
+# ----------------------------------------------------------------------
+def _le_split(conjunto: str) -> pd.DataFrame:
+    """
+    Junta X + y_idade + y_ataxia, como nos notebooks de treinamento.
+    """
+    X = pd.read_csv(DIR_SPLIT / f"X_{conjunto}_ready.csv")
+    partes = [X]
+    if ALVO_REG not in X.columns:
+        y_idade = pd.read_csv(DIR_SPLIT / f"y_idade_{conjunto}_ready.csv")
+        partes.append(y_idade[[ALVO_REG]])
+    partes.append(pd.read_csv(DIR_SPLIT / f"y_ataxia_{conjunto}_ready.csv"))
+    return pd.concat(partes, axis=1)
+
+
+@st.cache_data
+def _busca_splits() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+    """
+    Retorna os DataFrames de treino, validação e teste.
+    """
+    return tuple(_le_split(c) for c in ("train", "valid", "test"))
+
+
+@st.cache_data
+def _busca_resultados(tipo: str) -> dict[str, pd.DataFrame] | None:
+    """
+    Carrega df_{train,valid,test}_resultados_{tipo} (joblib).
+    tipo: 'classif' ou 'regression'. Retorna None se algum arquivo faltar.
+    """
+    pasta = DIR_CLASSIF if tipo == "classif" else DIR_REGR
+    caminhos = {
+        c: pasta / f"df_{c}_resultados_{tipo}" for c in ("train", "valid", "test")
+    }
+    if not all(p.is_file() for p in caminhos.values()):
+        return None
+    return {c: load(p) for c, p in caminhos.items()}
+
+
+@st.cache_data(show_spinner="Executando clustering...")
+def _roda_clustering(
+    modelo: str,
+    variavel_1: str,
+    variavel_2: str,
+    df_train: pd.DataFrame,
+    df_test: pd.DataFrame,
+) -> tuple[str, list]:
+    """
+    Executa a classe Clustering (sem alterá-la) e captura o que ela imprime
+    e os gráficos que ela cria.
+    """
+    plt.close("all")
+    cluster = Clustering(
+        c1=variavel_1, c2=variavel_2, df=df_train, modelo=modelo, alvo=ALVO_CLF
+    )
+
+    saida = io.StringIO()
+    with redirect_stdout(saida):
+        # Grid search por validação cruzada + métricas + gráficos (treino)
+        cluster.cross_validation(print_metricas=True)
+        print()
+        # Consistência dos clusters do treino no conjunto de teste
+        cluster.testar_modelo(best_param=cluster.best_params, df_test=df_test)
+
+    figuras = [plt.figure(n) for n in plt.get_fignums()]
+    plt.close("all")
+    return saida.getvalue(), figuras
+
+
+# ----------------------------------------------------------------------
+# Métricas, testes e gráficos
+# ----------------------------------------------------------------------
+def _metricas_clf(y_true, y_pred) -> dict:
+    return {
+        "Acurácia": accuracy_score(y_true, y_pred),
+        "Precision": precision_score(
+            y_true, y_pred, average="weighted", zero_division=0
+        ),
+        "Recall": recall_score(y_true, y_pred, average="weighted", zero_division=0),
+        "F1-Score": f1_score(y_true, y_pred, average="weighted", zero_division=0),
+    }
+
+
+def _metricas_reg(y_true, y_pred) -> dict:
+    rho, p_rho = spearmanr(y_true, y_pred)
+    return {
+        "R Spearman": rho,
+        "R p-value": p_rho,
+        "R2": r2_score(y_true, y_pred),
+        "MAE": mean_absolute_error(y_true, y_pred),
+        "RMSE": float(np.sqrt(mean_squared_error(y_true, y_pred))),
+        "MAPE": mean_absolute_percentage_error(y_true, y_pred),
+    }
+
+
+def _teste_qui_quadrado(pred_treino, pred_teste) -> str:
+    """
+    Qui-quadrado: a distribuição das classes preditas no treino e no teste
+    é homogênea?
+    """
+    try:
+        tabela = pd.crosstab(
+            np.repeat(["Treino", "Teste"], [len(pred_treino), len(pred_teste)]),
+            np.concatenate([np.asarray(pred_treino), np.asarray(pred_teste)]),
+        )
+        chi2, p, gl, _ = chi2_contingency(tabela)
+    except ValueError:
+        return "Teste qui-quadrado não aplicável (poucas classes preditas)."
+
+    if p < 0.05:
+        conclusao = "DIFERENTE (heterogênea): rejeita H0"
+    else:
+        conclusao = "IGUAL (homogênea): falha em rejeitar H0"
+    return (
+        "Distribuição das classes preditas, treino x teste\n"
+        f"χ² = {chi2:.4f} | gl = {gl} | p = {p:.4f}\n"
+        f"Conclusão: {conclusao}"
+    )
+
+
+def _testes_regressao(pred_treino, pred_teste) -> pd.DataFrame:
+    """
+    Compara a distribuição das previsões do treino com a do teste.
+    """
+    ks, p_ks = ks_2samp(pred_treino, pred_teste)
+    t, p_t = ttest_ind(pred_treino, pred_teste, equal_var=False)
+    u, p_u = mannwhitneyu(pred_treino, pred_teste, alternative="two-sided")
+    w, p_w = levene(pred_treino, pred_teste)
+
+    linhas = [
+        ("Kolmogorov-Smirnov (distribuição)", ks, p_ks),
+        ("Teste T de Welch (médias)", t, p_t),
+        ("Mann-Whitney (medianas)", u, p_u),
+        ("Levene (variâncias)", w, p_w),
+    ]
+    return pd.DataFrame(
+        {
+            "Teste": [n for n, _, _ in linhas],
+            "Estatística": [round(s, 4) for _, s, _ in linhas],
+            "p-valor": [round(p, 4) for _, _, p in linhas],
+            "Conclusão": [
+                "Diferentes (rejeita H0)" if p < 0.05 else "Iguais (não rejeita H0)"
+                for _, _, p in linhas
+            ],
+        }
+    )
+
+
+def _fig_confusao(y_true, y_pred, titulo: str):
+    classes = np.sort(np.unique(np.concatenate([y_true, y_pred])))
+    cm = confusion_matrix(y_true, y_pred, labels=classes)
+    rotulos = [NOMES_CLASSES.get(c, c) for c in classes]
+
+    fig, ax = plt.subplots(figsize=(4.5, 4.5))
+    ConfusionMatrixDisplay(cm, display_labels=rotulos).plot(
+        ax=ax, cmap=plt.cm.Greens, colorbar=False, xticks_rotation=45
+    )
+    ax.set_title(titulo)
+    fig.tight_layout()
+    plt.close(fig)
+    return fig
+
+
+def _fig_regressao(y_true, y_pred, titulo: str):
+    fig, ax = plt.subplots(figsize=(4.5, 4.5))
+    sns.regplot(x=y_true, y=y_pred, ax=ax, scatter_kws={"alpha": 0.5})
+    ax.set(title=titulo, xlabel="Observado", ylabel="Predito")
+    fig.tight_layout()
+    plt.close(fig)
+    return fig
+
+
+# ----------------------------------------------------------------------
+# Páginas
+# ----------------------------------------------------------------------
 class Paginas:
-    @st.cache_data
-    @validate_call
-    def busca_dados_cluster(_self) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-        """
-        Função de busca dos dados de treino e teste.
-        Retorna:
-            tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
-            DataFrames dos datasets de teste, treino e validação.
-        """
-        # Importando os dados de treino e teste
-        banco = acesso_data_banco()
-        link = banco + "df_estruturada/"
-        datasets = [link + i for i in os.listdir(link) if ".csv" in i]
-        df_test = pd.read_csv(datasets[0])
-        df_train = pd.read_csv(datasets[1])
-        df_valid = pd.read_csv(datasets[2])
+    def _clustering(self) -> None:
+        df_train, _, df_test = _busca_splits()
+        variaveis = [c for c in COLUNAS_NUM if c in df_train.columns]
+        if len(variaveis) < 2:
+            st.warning("Não há variáveis contínuas suficientes para o clustering.")
+            return None
 
-        return df_train, df_valid, df_test
-
-    @st.cache_data
-    @validate_call
-    def busca_dados_class(_self) -> tuple[dict[str, pd.DataFrame], pd.DataFrame]:
-        """
-        Função de busca dos dados de treino e teste.
-        Retorna:
-            tuple[dict[str, pd.DataFrame], pd.DataFrame]:
-            DataFrames dos datasets de teste, treino e validação.
-        """
-        # Importando os dados de treino e teste
-        banco = acesso_data_banco()
-        link = banco + "df_resultados/"
-        datasets = {i[25:]: load(link + i) for i in os.listdir(link)}
-
-        df_test = load(banco + "test_resultados_classif")
-
-        return datasets, df_test
-
-    @st.cache_data
-    @validate_call
-    def busca_dados_regr(_self) -> tuple[pd.DataFrame, pd.DataFrame]:
-        """
-        Função de busca dos dados de treino e teste.
-        Retorna:
-            tuple[pd.DataFrame, pd.DataFrame]:
-            DataFrames dos datasets de treino e teste.
-        """
-        # Importando os dados de treino e teste
-        banco = acesso_data_banco()
-        df_train = load(banco + "train_resultados_regr")
-        df_train = df_train[df_train.columns[[1, 8, 9, 10, 11]]].copy()
-
-        df_test = load(banco + "test_resultados_regr")
-        df_test = df_test[df_test.columns[[1, 8, 9, 10, 11]]].copy()
-
-        return df_train, df_test
-
-    @st.cache_data
-    def __clustering(
-        _self,
-        variavel_1: str,
-        variavel_2: str,
-        df_train: pd.DataFrame,
-        df_test: pd.DataFrame,
-    ) -> tuple[dict, str, str, str]:
-        """
-        Função de teste dos modelos de clustering.
-        Parametros:
-            self: Referência para a própria classe.
-            variavel_1: Primeira variável para o clustering.
-            variavel_2: Segunda variável para o clustering.
-            df_train: DataFrame de treino.
-            df_test: DataFrame de teste.
-        Retorna:
-            tuple[dict, str, str, str]: Resultados dos modelos e
-                mensagens de sucesso.
-        """
-        # K-means ------------------------------------------------
-        i = variavel_1
-        j = variavel_2
-
-        cluster = Clustering(c1=i, c2=j, df=df_train, modelo="kmeans")
-        resultados = {}
-        resultados["K-means"], msn_kmenans = cluster.testar_modelo(
-            best_param={"n_clusters": 3, "init": "k-means++", "n_init": 10},
-            df_test=df_test,
-        )
-
-        # DBSCAN -------------------------------------------------
-        i = variavel_1
-        j = variavel_2
-
-        cluster = Clustering(c1=i, c2=j, df=df_train, modelo="dbscan")
-        resultados["DBSCAN"], msn_dbscan = cluster.testar_modelo(
-            best_param={"eps": 0.5, "min_samples": 10, "metric": "euclidean"},
-            df_test=df_test,
-        )
-
-        # Agglomerative ------------------------------------------
-        i = variavel_1
-        j = variavel_2
-
-        cluster = Clustering(c1=i, c2=j, df=df_train, modelo="agglomerative")
-        resultados["Agg"], msn_agg = cluster.testar_modelo(
-            best_param={"n_clusters": 2, "metric": "euclidean", "linkage": "average"},
-            df_test=df_test,
-        )
-
-        return resultados, msn_kmenans, msn_dbscan, msn_agg
-
-    @st.cache_data
-    def __classifier(_self) -> None:
-        dados, df_test_class = _self.busca_dados_class()
-
-        col = st.columns((5, 0.5, 5, 0.5, 5))
-        dados_metricas = {
-            0: "GBM",
-            2: "k-NN",
-            4: "NB",
-        }
-        for k, v in dados_metricas.items():
-            with col[k]:
-                st.write("=" * 69)
-                st.markdown(
-                    f"<h4 style='text-align: center; '>{v}</h4>", unsafe_allow_html=True
-                )
-                st.write("=" * 69)
-                classificador = Classifier(df=dados[v])
-                classificador.testar_hipotese()
-                st.divider()
-                classificador.matrix_confusao(df=df_test_class, obs="classe", pred=v)
-
-        st.divider()
-
-        col = st.columns((5, 0.5, 5, 0.5, 5))
-        dados_metricas = {0: "NN", 2: "RF", 4: "SVM"}
-        for k, v in dados_metricas.items():
-            with col[k]:
-                st.write("=" * 69)
-                st.markdown(
-                    f"<h4 style='text-align: center; '>{v}</h4>", unsafe_allow_html=True
-                )
-                st.write("=" * 69)
-                classificador = Classifier(df=dados[v])
-                classificador.testar_hipotese()
-                st.divider()
-                classificador.matrix_confusao(df=df_test_class, obs="classe", pred=v)
-        return None
-
-    @st.cache_data
-    def __regressor(_self) -> None:
-        df_train_regr, df_test_regr = _self.busca_dados_regr()
-        modelos = {
-            0: df_train_regr.columns[1],
-            2: df_train_regr.columns[2],
-            4: df_train_regr.columns[3],
-            6: df_train_regr.columns[4],
-        }
-        col = st.columns((5, 0.5, 5, 0.5, 5, 0.5, 5))
-        for k, v in modelos.items():
-            with col[k]:
-                regressor = Regression(
-                    y_pred_treino=df_train_regr[v], y_pred_teste=df_test_regr[v]
-                )
-                regressor.testar_hipotese(y_pred=v)
-                st.divider()
-                regressor.obter_grafico(df_test=df_test_regr, y_true="IFN-γ", y_pred=v)
-        return None
-
-    @st.cache_data
-    def __datasets(_self) -> None:
-        df_train, df_valid, df_test = _self.busca_dados_cluster()
-        col = st.columns((2, 0.05, 2, 0.05, 2))
+        col = st.columns((2, 2, 4))
         with col[0]:
-            # Importando os dados de treino
-            st.markdown(
-                "<h4 style='text-align: center; '>Dados de Treino</h4>",
-                unsafe_allow_html=True,
-            )
-            st.dataframe(df_train)
-
+            variavel_1 = st.selectbox("Primeira variável:", variaveis, index=0)
+        with col[1]:
+            variavel_2 = st.selectbox("Segunda variável:", variaveis, index=1)
         with col[2]:
-            # Importando os dados de validação
-            st.markdown(
-                "<h4 style='text-align: center; '>Dados de Validação</h4>",
-                unsafe_allow_html=True,
+            modelo = st.radio(
+                "Modelo:",
+                list(MODELOS_CLUSTER),
+                format_func=MODELOS_CLUSTER.get,
+                horizontal=True,
             )
-            st.dataframe(df_valid)
 
-        with col[4]:
-            # Importando os dados de teste
-            st.markdown(
-                "<h4 style='text-align: center; '>Dados de Teste</h4>",
-                unsafe_allow_html=True,
+        if variavel_1 == variavel_2:
+            st.warning("Escolha duas variáveis diferentes.")
+            return None
+
+        try:
+            texto, figuras = _roda_clustering(
+                modelo, variavel_1, variavel_2, df_train, df_test
             )
-            st.dataframe(df_test)
+        except Exception as erro:  # mostra o erro em vez de derrubar o app
+            st.error(f"Não foi possível executar o clustering: {erro}")
+            return None
+
+        st.code(texto, language=None)
+        if figuras:
+            col = st.columns(len(figuras))
+            for c, fig in zip(col, figuras):
+                with c:
+                    st.pyplot(fig=fig)
+        return None
+
+    def _classificacao(self) -> None:
+        res = _busca_resultados("classif")
+        if res is None:
+            st.info("Resultados da classificação não encontrados.")
+            return None
+
+        escolha = st.radio(
+            "Conjunto avaliado:",
+            list(CONJUNTOS),
+            index=2,
+            horizontal=True,
+            key="conjunto_clf",
+        )
+        df = res[CONJUNTOS[escolha]]
+        modelos = [m for m in MODELOS_CLF if m in df.columns]
+        y_true = df[ALVO_CLF].to_numpy()
+
+        tabela = pd.DataFrame(
+            {m: _metricas_clf(y_true, df[m].to_numpy()) for m in modelos}
+        ).T.round(4)
+        st.dataframe(tabela)
+
+        for ini in range(0, len(modelos), 3):
+            col = st.columns((5, 0.5, 5, 0.5, 5))
+            for pos, m in zip((0, 2, 4), modelos[ini : ini + 3]):
+                with col[pos]:
+                    acc = tabela.loc[m, "Acurácia"]
+                    st.markdown(
+                        f"<h4 style='text-align: center; '>{m}</h4>",
+                        unsafe_allow_html=True,
+                    )
+                    st.pyplot(
+                        fig=_fig_confusao(
+                            y_true,
+                            df[m].to_numpy(),
+                            f"{escolha} - Acurácia {acc:.2f}",
+                        )
+                    )
+                    st.text(_teste_qui_quadrado(res["train"][m], res["test"][m]))
+            st.divider()
+        return None
+
+    def _regressao(self) -> None:
+        res = _busca_resultados("regression")
+        if res is None:
+            st.info("Resultados da regressão não encontrados.")
+            return None
+
+        escolha = st.radio(
+            "Conjunto avaliado:",
+            list(CONJUNTOS),
+            index=2,
+            horizontal=True,
+            key="conjunto_reg",
+        )
+        df = res[CONJUNTOS[escolha]]
+        modelos = [m for m in MODELOS_REG if m in df.columns]
+        y_true = df[ALVO_REG].to_numpy()
+
+        tabela = pd.DataFrame(
+            {m: _metricas_reg(y_true, df[m].to_numpy()) for m in modelos}
+        ).T.round(4)
+        st.dataframe(tabela)
+
+        for ini in range(0, len(modelos), 2):
+            col = st.columns((5, 0.5, 5))
+            for pos, m in zip((0, 2), modelos[ini : ini + 2]):
+                with col[pos]:
+                    r2 = tabela.loc[m, "R2"]
+                    st.markdown(
+                        f"<h4 style='text-align: center; '>{m}</h4>",
+                        unsafe_allow_html=True,
+                    )
+                    st.pyplot(
+                        fig=_fig_regressao(
+                            y_true, df[m].to_numpy(), f"{escolha} - R² {r2:.2f}"
+                        )
+                    )
+                    st.caption("Previsões do treino x teste")
+                    st.dataframe(
+                        _testes_regressao(
+                            res["train"][m].to_numpy(), res["test"][m].to_numpy()
+                        ),
+                        hide_index=True,
+                    )
+            st.divider()
+        return None
+
+    def _datasets(self) -> None:
+        df_train, df_valid, df_test = _busca_splits()
+        col = st.columns((2, 0.05, 2, 0.05, 2))
+        for pos, titulo, df in (
+            (0, "Dados de Treino", df_train),
+            (2, "Dados de Validação", df_valid),
+            (4, "Dados de Teste", df_test),
+        ):
+            with col[pos]:
+                st.markdown(
+                    f"<h4 style='text-align: center; '>{titulo}</h4>",
+                    unsafe_allow_html=True,
+                )
+                st.dataframe(df)
 
         col = st.columns((2, 10))
         with col[0]:
             metr = pd.DataFrame(
                 {
-                    "Métrica": ["Treino", "Validação", "Teste"],
+                    "Conjunto": ["Treino", "Validação", "Teste"],
                     "Tamanho": [len(df_train), len(df_valid), len(df_test)],
                 }
             )
@@ -221,60 +402,22 @@ class Paginas:
 
     def metricas(self) -> str:
         """
-        Função de cálculo das métricas de clustering.
-        Parametros:
-            self: Referência para a própria classe.
+        Monta as abas do app.
         Retorna:
             str: Mensagem de sucesso.
         """
-        abas = st.tabs(
-            [
-                "Clustering",
-                "Classificação",
-                "Regressão",
-                "Datasets",
-            ]
-        )
+        abas = st.tabs(["Clustering", "Classificação", "Regressão", "Datasets"])
+
         with abas[0]:
-            df_train, _, df_test = self.busca_dados_cluster()
-            col = st.columns((2, 2, 0.05, 2, 0.05, 2))
-            with col[0]:
-                # Create a dropdown menu
-                variavel_1 = st.radio(
-                    "Primeira variável:", ["PPD_log", "IFN-γ", "CD3_2"]
-                )
-                variavel_2 = st.radio(
-                    "Segunda variável:", ["CD3_2", "PPD_log", "IFN-γ"]
-                )
-
-            resultados, msn_kmenans, msn_dbscan, msn_agg = self.__clustering(
-                variavel_1=variavel_1,
-                variavel_2=variavel_2,
-                df_train=df_train,
-                df_test=df_test,
-            )
-            with col[1]:
-                # Testando os modelos de clustering via K-means
-                st.markdown(f"<p>{msn_kmenans}</p>", unsafe_allow_html=True)
-                st.pyplot(fig=resultados["K-means"])
-
-            with col[3]:
-                # Testando os modelos de clustering via DBSCAN
-                st.markdown(f"<p>{msn_dbscan}</p>", unsafe_allow_html=True)
-                st.pyplot(fig=resultados["DBSCAN"])
-
-            with col[5]:
-                # Testando os modelos de clustering via Agglomerative
-                st.markdown(f"<p>{msn_agg}</p>", unsafe_allow_html=True)
-                st.pyplot(fig=resultados["Agg"])
+            self._clustering()
 
         with abas[1]:
-            self.__classifier()
+            self._classificacao()
 
         with abas[2]:
-            self.__regressor()
+            self._regressao()
 
         with abas[3]:
-            self.__datasets()
+            self._datasets()
 
         return "Métricas Calculadas"
