@@ -1,3 +1,19 @@
+import sys
+from pathlib import Path
+
+# main.py -> app -> script -> dev -> raiz do repo
+RAIZ = Path(__file__).resolve().parents[3]
+if str(RAIZ) not in sys.path:
+    sys.path.insert(0, str(RAIZ))
+
+import numpy as np
+import matplotlib.pyplot as plt
+from PIL import Image
+import streamlit as st
+
+from dev.script.src.acesso_data import acesso_data_logo, acesso_data_icon
+from dev.script.src.paginas import Paginas
+
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
