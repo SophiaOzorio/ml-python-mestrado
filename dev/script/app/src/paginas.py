@@ -66,7 +66,7 @@ CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 DIR_SCRIPT = Path(__file__).resolve().parents[1]
 
 # Garante explicitamente que são objetos Path e aponta para a pasta correta com 'data'
-DIR_SPLIT: Path = DIR_SCRIPT / "app" / "data" / "results" / "split_dataset"
+DIR_SPLIT: Path = DIR_SCRIPT  / "data" / "results" / "split_dataset"
 DIR_CLASSIF: Path = DIR_SPLIT
 DIR_REGR: Path = DIR_SPLIT
  
