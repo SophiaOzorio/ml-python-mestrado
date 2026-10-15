@@ -66,10 +66,11 @@ CONJUNTOS = {"Treino": "train", "Validação": "valid", "Teste": "test"}
 DIR_SCRIPT = Path(__file__).resolve().parents[1]
 
 # Garante explicitamente que são objetos Path e aponta para a pasta correta com 'data'
-DIR_SPLIT = DIR_SCRIPT  / "data" / "results" / "split_dataset"
+DIR_SPLIT = DIR_SCRIPT / "data" / "results" / "split_dataset"
 DIR_CLASSIF = DIR_SCRIPT / "data" / "results" / "classificacao"
 DIR_REGR = DIR_SPLIT
- 
+
+
 # ----------------------------------------------------------------------
 # Busca de dados (com cache)
 # ----------------------------------------------------------------------
@@ -84,7 +85,6 @@ def _le_split(conjunto: str) -> pd.DataFrame:
         partes.append(y_idade[[ALVO_REG]])
     partes.append(pd.read_csv(DIR_SPLIT / f"y_ataxia_{conjunto}_ready.csv"))
     return pd.concat(partes, axis=1)
- 
 
 
 @st.cache_data
@@ -98,7 +98,7 @@ def _busca_splits() -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
 @st.cache_data
 def _busca_resultados(tipo: str) -> dict[str, pd.DataFrame] | None:
     pasta = DIR_CLASSIF if tipo == "classif" else DIR_REGR
-    
+
     caminhos = {
         c: pasta / f"df_{c}_resultados_{tipo}" for c in ("train", "valid", "test")
     }

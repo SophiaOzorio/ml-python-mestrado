@@ -1,11 +1,10 @@
-import os
 from dev.script.app.src.paginas import _busca_splits
 
 
 def test_busca_dados_cluster():
     # Given / When: _busca_splits retorna (train, valid, test)
     df_train, df_valid, df_test = _busca_splits()
-    
+
     # Then
     assert len([df_train, df_valid, df_test]) == 3
 

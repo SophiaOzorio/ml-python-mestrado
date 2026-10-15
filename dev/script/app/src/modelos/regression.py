@@ -22,7 +22,8 @@ import numpy as np
 try:
     from util import utils as ut
 except ImportError:  # fallback caso o módulo 'util' do professor não exista
-    class ut:  # noqa: N801
+
+    class ut:  # type: ignore[no-redef]  # noqa: N801
         @staticmethod
         def printDic(dic: dict) -> None:
             print("------------------")
@@ -30,6 +31,7 @@ except ImportError:  # fallback caso o módulo 'util' do professor não exista
             print("------------------")
             for k, v in dic.items():
                 print(f"{k} -> {v}")
+
 
 # Seleção de hiperparâmetros e validação cruzada
 from sklearn.model_selection import GridSearchCV
@@ -260,8 +262,8 @@ class Regression:
         param_grid = {
             "var_threshold__threshold": [1e-4, 0.01, 0.05],
             "feature_selection__k": [1, 2, "all"],
-            "nb__n_iter": [100, 300], 
-        #    "nb__max_iter": [100, 300],
+            "nb__n_iter": [100, 300],
+            #    "nb__max_iter": [100, 300],
             "nb__alpha_1": [1e-6, 1e-4],
             "nb__lambda_1": [1e-6, 1e-4],
         }

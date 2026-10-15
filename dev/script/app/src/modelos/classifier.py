@@ -30,14 +30,15 @@ from sklearn.feature_selection import f_classif
 
 # Métricas da classificação
 from sklearn.metrics import (
-                                classification_report,
-                                confusion_matrix,
-                                ConfusionMatrixDisplay,
-                                accuracy_score,
-                                precision_score,
-                                recall_score,
-                                f1_score,
-                            )
+    classification_report,
+    confusion_matrix,
+    ConfusionMatrixDisplay,
+    accuracy_score,
+    precision_score,
+    recall_score,
+    f1_score,
+)
+
 
 class Classifier:
     """
