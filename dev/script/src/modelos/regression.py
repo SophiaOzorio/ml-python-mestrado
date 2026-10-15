@@ -21,7 +21,7 @@ import numpy as np
 
 try:
     from util import utils as ut
-except ImportError:  # fallback caso o módulo 'util' do professor não exista
+except ImportError:  
     class ut:  # noqa: N801
         @staticmethod
         def printDic(dic: dict) -> None:
@@ -55,7 +55,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import mean_absolute_percentage_error
 from scipy.stats import spearmanr
 
-# Variável-alvo da regressão no projeto (no script original era "IFN-γ")
+# Variável-alvo da regressão 
 ALVO_REG = "idade_inicio_sintomas"
 
 
