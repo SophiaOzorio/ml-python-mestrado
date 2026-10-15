@@ -1,4 +1,4 @@
-from src.paginas import Paginas
+from dev.script.app.src.paginas import Paginas
 
 
 def test_metricas_clustering():
