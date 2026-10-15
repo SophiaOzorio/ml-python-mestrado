@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  run-tests:
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        python-version:
+          - "3.10"
+          - "3.11"
+    
+    name: Test
+    runs-on: ${{ matrix.os }}
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+      
+      - name: Atualizar pip
+        run: python -m pip install --upgrade pip
+
+      - name: Install dependences
+        run: |
+          if [ -f ./dev/docker/requirements.txt ]; then
+            python -m pip install -r ./dev/docker/requirements.txt
+          elif [ -f ./requirements.txt ]; then
+            python -m pip install -r ./requirements.txt
+          else
+            python -m pip install streamlit matplotlib seaborn scikit-learn joblib scipy pandas pytest pytest-cov ruff mypy flake8
+          fi
+
+# -------------------------------------------------------------------------------------------------------
+      - name: Run Pytest
+        env:
+          PYTHONPATH: .
+        run: pytest ./dev/script/app/py_test
+
+      - name: Run Ruff
+        run: ruff format ./dev/script/app
+      
+      - name: Run Mypy
+        run: mypy ./dev/script/app --ignore-missing-imports --follow-imports skip
+      
+      - name: Run Flake
+        run: flake8 --max-complexity 12 ./dev/script/app
