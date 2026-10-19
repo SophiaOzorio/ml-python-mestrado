@@ -119,7 +119,7 @@ class Clustering:
             marginal_ticks=True,
             data=self.df,
         )
-        p.fig.suptitle("Correlação Variáveis Discretas", y=1.02)
+        p.fig.suptitle("Correlação Variáveis Contínuas", y=1.02)
         p.set_axis_labels(xlabel=self.c1, ylabel=self.c2)
         return None
 
