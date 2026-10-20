@@ -32,7 +32,7 @@ from dev.script.src.modelos.clustering import Clustering
 plt.switch_backend("Agg")
 
 # ----------------------------------------------------------------------
-# Configurações do projeto 
+# Configurações do projeto
 # ----------------------------------------------------------------------
 ALVO_CLF = "ataxia"
 ALVO_REG = "idade_inicio_sintomas"
@@ -355,14 +355,16 @@ class Paginas:
                     r2 = tabela.loc[m, "R2"]
 
                     st.markdown(
-                         f"<h4 style='text-align: center;'>{m}</h4>",
-                         unsafe_allow_html=True,
+                        f"<h4 style='text-align: center;'>{m}</h4>",
+                        unsafe_allow_html=True,
                     )
 
-                    df_plot = pd.DataFrame({
-                        "y_true": y_true,
-                        "y_pred": df[m].to_numpy(),
-                    })
+                    df_plot = pd.DataFrame(
+                        {
+                            "y_true": y_true,
+                            "y_pred": df[m].to_numpy(),
+                        }
+                    )
 
                     p = sns.jointplot(
                         x="y_true",
