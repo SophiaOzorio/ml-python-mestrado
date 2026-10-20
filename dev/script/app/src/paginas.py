@@ -352,8 +352,6 @@ class Paginas:
             col = st.columns((5, 0.5, 5))
             for pos, m in zip((0, 2), modelos[ini : ini + 2]):
                 with col[pos]:
-                    r2 = tabela.loc[m, "R2"]
-
                     st.markdown(
                         f"<h4 style='text-align: center;'>{m}</h4>",
                         unsafe_allow_html=True,
