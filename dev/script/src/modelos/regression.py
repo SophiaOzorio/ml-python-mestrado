@@ -95,7 +95,9 @@ class Regression:
         r_cal, r_cal_p = spearmanr(df_test["y_true"], df_test["y_pred"])
         r2_cal = r2_score(df_test["y_true"], df_test["y_pred"])
         mae_cal = mean_absolute_error(df_test["y_true"], df_test["y_pred"])
-        rmse_cal = mean_squared_error(df_test["y_true"], df_test["y_pred"])
+        rmse_cal = np.sqrt(
+            mean_squared_error(df_test["y_true"], df_test["y_pred"])
+        )        
         mape_cal = mean_absolute_percentage_error(df_test["y_true"], df_test["y_pred"])
 
         mensagem = f"""

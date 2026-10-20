@@ -378,8 +378,8 @@ class Paginas:
                     )
 
                     mensagem = (
-                        f"R Spearman: {tabela.loc[m, 'R_Spearman']:.4f}\n"
-                        f"R2: {r2:.4f}\n"
+                        f"R Spearman: {tabela.loc[m, 'R Spearman']:.4f}\n"
+                        f"R2: {tabela.loc[m, 'R p-value']:.4f}\n"
                         f"MAE: {tabela.loc[m, 'MAE']:.4f}\n"
                         f"RMSE: {tabela.loc[m, 'RMSE']:.4f}\n"
                         f"MAPE: {tabela.loc[m, 'MAPE']:.4f}"
