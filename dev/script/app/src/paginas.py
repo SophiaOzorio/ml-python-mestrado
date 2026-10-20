@@ -32,7 +32,7 @@ from dev.script.src.modelos.clustering import Clustering
 plt.switch_backend("Agg")
 
 # ----------------------------------------------------------------------
-# Configurações do projeto (ajuste aqui, o resto do código não muda)
+# Configurações do projeto 
 # ----------------------------------------------------------------------
 ALVO_CLF = "ataxia"
 ALVO_REG = "idade_inicio_sintomas"
@@ -72,7 +72,7 @@ DIR_REGR = DIR_SPLIT
 
 
 # ----------------------------------------------------------------------
-# Busca de dados (com cache)
+# Busca de dados
 # ----------------------------------------------------------------------
 def _le_split(conjunto: str) -> pd.DataFrame:
     """
@@ -353,19 +353,59 @@ class Paginas:
             for pos, m in zip((0, 2), modelos[ini : ini + 2]):
                 with col[pos]:
                     r2 = tabela.loc[m, "R2"]
+
                     st.markdown(
-                        f"<h4 style='text-align: center; '>{m}</h4>",
-                        unsafe_allow_html=True,
+                         f"<h4 style='text-align: center;'>{m}</h4>",
+                         unsafe_allow_html=True,
                     )
-                    st.pyplot(
-                        fig=_fig_regressao(
-                            y_true, df[m].to_numpy(), f"{escolha} - R² {r2:.2f}"
-                        )
+
+                    df_plot = pd.DataFrame({
+                        "y_true": y_true,
+                        "y_pred": df[m].to_numpy(),
+                    })
+
+                    p = sns.jointplot(
+                        x="y_true",
+                        y="y_pred",
+                        kind="reg",
+                        marginal_ticks=True,
+                        data=df_plot,
                     )
+
+                    p.fig.suptitle(
+                        f"Correlação predito / observado - {m}",
+                        y=1.02,
+                    )
+
+                    mensagem = (
+                        f"R Spearman: {tabela.loc[m, 'R_Spearman']:.4f}\n"
+                        f"R2: {r2:.4f}\n"
+                        f"MAE: {tabela.loc[m, 'MAE']:.4f}\n"
+                        f"RMSE: {tabela.loc[m, 'RMSE']:.4f}\n"
+                        f"MAPE: {tabela.loc[m, 'MAPE']:.4f}"
+                    )
+
+                    p.ax_joint.text(
+                        0.05,
+                        0.99,
+                        mensagem,
+                        transform=p.ax_joint.transAxes,
+                        fontsize=10,
+                        ha="left",
+                        va="top",
+                    )
+
+                    p.ax_joint.set_xlabel("Observado")
+                    p.ax_joint.set_ylabel("Predito")
+
+                    st.pyplot(p.fig)
+                    plt.close(p.fig)
+
                     st.caption("Previsões do treino x teste")
                     st.dataframe(
                         _testes_regressao(
-                            res["train"][m].to_numpy(), res["test"][m].to_numpy()
+                            res["train"][m].to_numpy(),
+                            res["test"][m].to_numpy(),
                         ),
                         hide_index=True,
                     )
