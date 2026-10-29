@@ -11,7 +11,7 @@ O dataset utilizado foi gerado artificialmente com o auxílio do Claude e conté
 
 ## Objetivos:
 - Classificação: distinguir os tipos de ataxia com base nas anotações in silico.
-- Clusterização: é possíve agrupar as variantes como as classes clínicas?
+- Clusterização: é possível agrupar as variantes como as classes clínicas?
 - Regressão: identificar a idade de início dos sintomas de ataxia.
 
 ## Aplicação web
